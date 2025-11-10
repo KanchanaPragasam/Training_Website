@@ -1,0 +1,24 @@
+/* tsconfig.server.json */
+{
+  "extends": "./tsconfig.app.json",
+  "compilerOptions": {
+    "outDir": "./dist/out-tsc/server",
+    "target": "es2022",
+    "module": "es2022",
+    "types": ["node"]
+  },
+  "files": [
+    "src/main.server.ts", // This is the entry point for SSR build
+    "src/server.ts"       // If server.ts is also an entry point
+  ],
+  "include": [
+    "src/**/*.d.ts",
+    "src/server.ts"
+  ],
+  "exclude": [
+    // Add these lines to explicitly ignore browser-specific JS files during server build
+    "node_modules/@popperjs/core/**/*.js",
+    "node_modules/bootstrap/**/*.js",
+    "node_modules/quill/**/*.js" // Quill sometimes causes issues too
+  ]
+}

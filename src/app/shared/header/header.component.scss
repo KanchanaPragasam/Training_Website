@@ -1,0 +1,113 @@
+@use '../../../assets/styles/main.scss' as *;
+
+// ---------------------------
+// Navbar Base
+// ---------------------------
+.navbar {
+  background-color: $white-color !important;
+  box-shadow: 0 2px 8px 4px rgba(0, 0, 0, 0.1) !important;
+}
+
+.navbar-nav {
+  gap: 2rem;
+}
+
+.nav-item {
+  align-content: center;
+}
+
+.navbar-toggler {
+  align-items: center;
+  justify-content: center;
+
+  i {
+    font-size: $font-span;
+    color: $primary-color !important;
+  }
+}
+.navbar-toggler:focus{
+  box-shadow: none;
+}
+
+a {
+  font-size: $font-a;
+}
+
+// ---------------------------
+// Nav Links
+// ---------------------------
+.navbar-nav .nav-link {
+  color: $text-color !important;
+  transition: color 0.2s ease;
+
+  &:hover {
+    color: $primary-color !important;
+  }
+  &.active-link {
+    color: $primary-color !important;
+    font-weight: 600;
+  }
+}
+
+// ---------------------------
+// Navbar Behavior
+// ---------------------------
+.navbar-hidden {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}
+// ---------------------------------------------------------------------------------
+// WhatsApp Button
+// ---------------------------------------------------------------------------------
+
+.primary-button{
+  border-top-right-radius: 0px;
+  border-bottom-right-radius: 0px;
+}
+.whatsapp-button {
+  background: #fff;                 // White background
+  color: $primary-color;            // WhatsApp icon color
+  border: 2px solid $primary-color; // Thin border of primary color
+
+  padding: 0.5rem;                     // Add space around icon
+                 // Adjust icon size
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+              // Space between text and icon
+  transition: all 0.3s ease;
+   border-top-right-radius: 0.5rem;
+  border-bottom-right-radius: 0.5rem;
+
+  &:hover {
+    background: $primary-color;
+    color: #fff;                    // Reverse color on hover
+  }
+}
+
+// ---------------------------------------------------------------------------------
+// Responsive
+// ---------------------------------------------------------------------------------
+@media (max-width: 768px) {
+  .navbar {
+    position: relative;
+    
+  }
+
+  .navbar-collapse {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background-color: $white-color;
+    z-index: 1040;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-item {
+    padding: 1rem 0rem;
+  }
+  .navbar-nav{
+    gap: 0rem;
+  }
+}

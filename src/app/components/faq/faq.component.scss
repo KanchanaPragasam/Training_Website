@@ -1,0 +1,83 @@
+@use "../../../assets/styles/main.scss" as *;
+
+// ----------------------------
+// FAQ Image Styles
+// ----------------------------
+.faq-image {
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  object-fit: cover;
+}
+.faq-categories-slider {
+  scroll-behavior: smooth;
+}
+
+// ----------------------------
+// FAQ Categories Slider (Horizontal scroll)
+// ----------------------------
+.faq-categories-slider {
+  display: flex;
+  overflow-x: auto;
+  gap: 15px;
+  /* Hide scrollbar */
+  &::-webkit-scrollbar {
+    width: 20%;
+    // display: none;
+  }
+  //   scrollbar-width: none; /* Firefox */
+  //   -ms-overflow-style: none; /* IE 10+ */
+}
+.faq-scrollbar-track {
+  position: relative;
+  height: 6px;
+  background-color: #eee;
+  border-radius: 3px;
+  user-select: none;
+  cursor: pointer;
+  margin-bottom: 2rem;
+  width: 100%; /* <-- now only 10% width */
+  margin-left: auto; /* <-- push it to right */
+  margin-right: 0;
+}
+
+.faq-scrollbar-thumb {
+  width: 10%;
+  position: absolute;
+  height: 90%;
+  background-color: $primary-color;
+  border-radius: 3px;
+  transition: left 0.1s ease;
+  margin-bottom: 1rem;
+  cursor: grab;
+}
+.faq-section .accordion-flush > .accordion-item .accordion-button{
+  font-size: 1.5rem !important;
+}
+// ----------------------------
+// FAQ Category Chip Styles
+// ----------------------------
+.faq-category {
+  flex: 0 0 auto;
+  padding: 10px 25px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+.faq-category.active {
+  background-color: $primary-color-light;
+  border: 1px solid $primary-color;
+  border-radius: 6px;
+  color: $text-color;
+}
+
+@media screen and (max-width: 768px) {
+  .faq-categories-slider{
+    gap: 0px;
+    padding: 0px;
+  }
+  .faq-category{
+    padding: 5px 12px;
+  }
+
+}

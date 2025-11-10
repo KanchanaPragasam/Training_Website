@@ -1,0 +1,229 @@
+<section class="course-detail-section">
+  <!-- Hero Banner -->
+  <div class="banner-section">
+    <img
+      *ngIf="!videoLoaded && course?.video"
+      class="banner-video"
+      src="../../../../assets/images/fall-back-image.webp"
+      alt="Fallback Banner"
+    />
+
+    <video
+      #bannerVideo
+      *ngIf="course?.video"
+      class="banner-video"
+      [attr.src]="'assets/video/' + course?.video"
+      muted
+      autoplay
+      loop
+      playsinline
+      preload="auto"
+      width="100%"
+      (loadeddata)="onVideoLoaded()"
+    >
+      Your browser does not support the video tag.
+    </video>
+
+    <ng-container *ngIf="!course?.video">
+      <img
+        class="banner-video"
+        src="../../../../assets/images/fall-back-image.webp"
+        alt="Fallback Banner"
+      />
+    </ng-container>
+
+    <div class="container">
+      <div class="banner-content">
+        <h1 class="banner-title fw-bold">
+          {{ course?.courseTitle }}
+        </h1>
+        <div class="">
+          <h5 class="banner-pill">Duration: {{ course?.courseDuration }}</h5>
+          <h5 class="banner-pill">Mode: Online / Offline</h5>
+        </div>
+        <div>
+          <button class="primary-button mt-2" (click)="enrollNow()">
+            Enroll Now
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sticky Navigation -->
+  <div class="center-tabs shadow-sm" id="courseNav">
+    <div class="container">
+      <!-- tabs-titles -->
+      <ul class="tabs-nav nav justify-content-center">
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [ngClass]="{ active: activeTab === 'overview' }"
+            (click)="scrollTo('overview')"
+            >Overview</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [ngClass]="{ active: activeTab === 'syllabus' }"
+            (click)="scrollTo('syllabus')"
+            >Syllabus</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [ngClass]="{ active: activeTab === 'career' }"
+            (click)="scrollTo('career')"
+            >Scope</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="container">
+    <!-- Overview Section -->
+    <section id="overview" class="mt-3">
+      <h3 class="mb-3 dashed-underline">
+        Explore what this course is all about
+      </h3>
+      <div class="ms-4">
+        <p>{{ course?.overview }}</p>
+      </div>
+
+      <div class="row mt-4 ms-4">
+        <div class="col-md-6">
+          <h5 class="fw-bold">Who can enroll</h5>
+          <div class="enroll-container">
+            <div *ngFor="let enroll of course?.canEnroll" class="enroll-chip">
+              <i class="bi bi-check-circle me-1"></i>
+              <p class="enroll-text">{{ enroll }}</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Syllabus Section -->
+    <section id="syllabus" class="mt-3">
+      <h3>Detailed Breakdown of the Course Syllabus</h3>
+      <ul class="ms-4">
+        <li *ngFor="let section of sections; let i = index">
+          <strong>Lesson {{ i + 1 }}: {{ section.title }}</strong>
+
+          <ul>
+            <li *ngFor="let lesson of section.lessons">{{ lesson }}</li>
+          </ul>
+        </li>
+      </ul>
+      <h5 class="m-4 primary-color">Tools Covered</h5>
+      <div class="tools-container ms-4">
+        <span *ngFor="let tool of course?.toolsCovered" class="tool-chip">
+          {{ tool }}
+        </span>
+      </div>
+    </section>
+    <!-- Career Scope Section -->
+    <section id="career" class="mt-3">
+      <h3 class="mb-3">Where this course can take you</h3>
+      <div class="row ms-4">
+        <div class="col-md-4 mb-3" *ngFor="let scope of course?.careerScope">
+          <div class="career-card p-3 shadow-md rounded text-center h-100">
+            <h6 class="mt-2">{{ scope }}</h6>
+          </div>
+        </div>
+      </div>
+
+      <!-- ✅ Certification Section -->
+    </section>
+  </div>
+  <section class="certificate-section">
+    <div class="container position-relative">
+      <div class="d-flex flex-column flex-md-row align-items-center gap-4">
+        <!-- Left: Certificate Image -->
+        <div class="certificate flex-shrink-0">
+          <img
+            src="../../../../assets/images/certificate.webp"
+            alt="Certificate"
+            class="img-fluid certificate-img"
+          />
+          <span></span>
+          <!-- helper element for bottom-right corner -->
+        </div>
+
+        <!-- Right: Certificate Content -->
+        <div class="certificate-content flex-grow-1">
+          <div class="p-4 shadow-md bgs-light">
+            <h3 class="fw-bold">Will I Get Course Completion Certificate?</h3>
+            <p class="mb-0 ms-4">
+              Upon successful completion of this course, you will receive a
+              certificate that validates your skills and supports your career
+              growth.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="container">
+      <div class="faq row" appAnimateOnScroll>
+        <div class="faq-main col-12 col-lg-5">
+          <div>
+            <h2>FAQ</h2>
+          </div>
+        </div>
+
+        <!-- faq-question -->
+        <div class="faq-question col-12 col-lg-12">
+          <!-- 🔹 Expand / Collapse All link -->
+          <div class="faq-toggle-link text-end mb-3">
+            <span
+              class="toggle-text primary-color text-decoration-underline cursor-pointer"
+              (click)="toggleAllFAQs()"
+            >
+              {{ allExpanded ? "Collapse All" : "Expand All" }}
+            </span>
+          </div>
+
+          <div class="question" appAnimateOnScroll>
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div
+                class="accordion-item"
+                *ngFor="let item of course?.faq; let i = index"
+              >
+                <h2 class="accordion-header" [attr.id]="'heading' + i">
+                  <div
+                    class="accordion-button"
+                    [ngClass]="{ collapsed: !item.isOpen }"
+                    type="button"
+                    (click)="toggleFaqItem(i)"
+                    [attr.aria-expanded]="item.isOpen"
+                    [attr.aria-controls]="'collapse' + i"
+                  >
+                    <h5>{{ item.question }}</h5>
+                  </div>
+                </h2>
+
+                <div
+                  class="accordion-collapse collapse"
+                  [class.show]="item.isOpen"
+                  [attr.id]="'collapse' + i"
+                  [attr.aria-labelledby]="'heading' + i"
+                  [attr.data-bs-parent]="null"
+                >
+                  <div class="accordion-body">
+                    <p>{{ item.answer }}</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</section>

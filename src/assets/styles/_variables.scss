@@ -1,0 +1,89 @@
+// === Base Color Variables (Light Mode Defaults) ===
+$primary-color: #b64abc;
+$secondary-color: #02aed0;
+$tertiary-color: #f8f9fa;
+$accent-color: #d2dde7;
+
+$secondary-color-light: #40C5DD;
+$primary-color-light: #f9ddfa;
+$secondary-color-very-light: #7EDBE9;
+$primary-color-very-light: #f9ddfa;
+
+$primary-color-dark: #7f3583;
+$primary-color-hover: #b964be;
+
+$text-color: #424360;
+$secondary-text-color: #48494c;
+$faq-color: #f1f1f1;
+$alert-color: #e53935;
+$alert-color-bg: #fff6f6;
+
+$white-color: #fff;
+$white-color-hover: #f1f1f1;
+$whatsapp-color: #25D366;
+$black-color: #000;
+$default-bg-color: #ffffff;
+
+// ==================================================
+// 🌗 CSS Variables Mirror
+// ==================================================
+:root {
+  --primary-color: #{$primary-color};
+  --secondary-color: #{$secondary-color};
+  --tertiary-color: #{$tertiary-color};
+  --accent-color: #{$accent-color};
+  --secondary-color-light: #{$secondary-color-light};
+  --primary-color-light: #{$primary-color-light};
+  --primary-color-hover: #{$primary-color-hover};
+  --text-color: #{$text-color};
+  --secondary-text-color: #{$secondary-text-color};
+  --faq-color: #{$faq-color};
+  --alert-color: #{$alert-color};
+  --alert-color-bg: #{$alert-color-bg};
+  --white-color: #{$white-color};
+  --white-color-hover: #{$white-color-hover};
+  --whatsapp-color: #{$whatsapp-color};
+  --default-bg-color: #{$default-bg-color};
+}
+
+// ==================================================
+// 🌙 Dark Mode Overrides (Auto-detected from system)
+// ==================================================
+// @media (prefers-color-scheme: dark) {
+//   :root {
+//     --primary-color: #7f3583;
+//     --secondary-color: #40C5DD;
+//     --tertiary-color: #eeeeee;
+//     --accent-color: #333333;
+//     --primary-color-hover: #b964be;
+
+//     --text-color: #f8f9fa;
+//     --secondary-text-color: #cccccc;
+//     --faq-color: #1a1a1a;
+//     --alert-color-bg: #2a0000;
+
+//     --white-color: #949494;
+//     --white-color-hover: #1a1a1a;
+//     --default-bg-color: #5b5b5b;
+//   }
+// }
+
+// ==================================================
+// 🪄 Rebind SCSS variables to CSS variables
+// ==================================================
+$primary-color: var(--primary-color);
+$secondary-color: var(--secondary-color);
+$tertiary-color: var(--tertiary-color);
+$accent-color: var(--accent-color);
+$secondary-color-light: var(--secondary-color-light);
+$primary-color-light: var(--primary-color-light);
+$primary-color-hover: var(--primary-color-hover);
+$text-color: var(--text-color);
+$secondary-text-color: var(--secondary-text-color);
+$faq-color: var(--faq-color);
+$alert-color: var(--alert-color);
+$alert-color-bg: var(--alert-color-bg);
+$white-color: var(--white-color);
+$white-color-hover: var(--white-color-hover);
+$whatsapp-color: var(--whatsapp-color);
+$default-bg-color: var(--default-bg-color);

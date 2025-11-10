@@ -1,0 +1,74 @@
+<!--  Floating Bot Button -->
+<section class="enquiry-bot-section">
+  <div class="container">
+     <button class="scroll-top-button" title="Go to Top" (click)="scrollToTop()">
+      <i class="fa-solid fa-arrow-up"></i>
+    </button>
+    <div class="chatbot-button fw-bold" title="Enquiry Form" (click)="togglePopup()">
+      Enquiry Now
+    </div>
+
+    <!--  Popup Form -->
+    <div
+      class="chatbot-popup animated"
+      [class.slideInRight]="!isClosing"
+      [class.slideOutRight]="isClosing"
+     
+      *ngIf="isPopupVisible"
+    >
+      
+
+      <div class="chatbot-header d-flex justify-content-between align-items-center">
+        <h5 class="primary-color">Quick Enquiry</h5>
+        <button class="close-button" (click)="togglePopup()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+      </div>
+
+      <form [formGroup]="enquiryForm" (ngSubmit)="sendEnquiry()">
+        <div class="row">
+          <div class="col-md-12 mb-3">
+            <label class="required-label">Name</label>
+            <input type="text" formControlName="name" class="form-control" />
+          </div>
+
+          <div class="col-md-12 mb-3">
+            <label class="required-label">Mobile Number</label>
+            <input type="tel" formControlName="mobile" class="form-control" />
+          </div>
+
+          <div class="col-md-12 mb-3">
+            <label class="required-label">Email</label>
+            <input type="email" formControlName="email" class="form-control" />
+          </div>
+
+          <!-- Dropdown -->
+          <div class="col-md-12 mb-3">
+            <label class="required-label">Enquire Regarding</label>
+            <select formControlName="enquiryType" class="form-select">
+              <option value="">Select an option</option>
+              <option value="Course">Course</option>
+              <option value="Internship">Internship</option>
+            </select>
+          </div>
+
+          <div class="col-md-12 mb-3" *ngIf="isBrowser">
+            <label class="required-label">Message</label>
+            <div class="quill-wrapper resizable">
+              <quill-editor
+                [(ngModel)]="message"
+                [modules]="quillModules"
+                formControlName="message"
+                [placeholder]="'Type your message here...'"
+              ></quill-editor>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between">
+          <button type="submit" class="primary-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</section>

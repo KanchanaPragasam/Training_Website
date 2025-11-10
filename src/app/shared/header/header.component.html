@@ -1,0 +1,53 @@
+<nav class="navbar navbar-expand-lg shadow-sm">
+  <div class="container">
+    <!-- Logo (Left) -->
+    <a class="navbar-brand" routerLink="/home" routerLinkActive="active-link">
+      <img src="../../../assets/images/logo-croped.webp" alt="Logo" height="70" loading="eager" />
+    </a>
+
+    <!-- Toggler for Mobile -->
+    <button class="navbar-toggler" type="button" (click)="toggleNav()" aria-label="Toggle navigation">
+      <i class="fas" [ngClass]="isNavOpen ? 'fa-times' : 'fa-bars'"></i>
+    </button>
+
+    <!-- Navigation Links (All on Right) -->
+    <div class="collapse navbar-collapse justify-content-end" [ngClass]="{ show: isNavOpen }" id="mainNav">
+      <ul class="navbar-nav mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link container" routerLink="/home" routerLinkActive="active-link">Home</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link container" routerLink="/courses" routerLinkActive="active-link">Courses</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link container" routerLink="/internship" routerLinkActive="active-link">Internship</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link container" routerLink="/about" routerLinkActive="active-link">About</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link container" routerLink="/contact" routerLinkActive="active-link">Contact</a>
+        </li>
+
+        <!-- <li class="nav-item">
+          <a class="nav-link container" routerLink="/faq" routerLinkActive="active-link">FAQ</a>
+        </li> -->
+
+
+        <!-- WhatsApp Button -->
+        <!--Kanchana WhatsApp Number for testing purpose-->
+        <li class="nav-item d-flex" (click)="openWhatsApp()">
+
+          <button class=" container primary-button fw-bold" >
+            Chat with Us
+          </button>
+          <i class="fab fa-whatsapp fa-5x me-1 whatsapp-button"></i>
+        </li>
+
+        <!-- Chat with Us on WhatsApp" -->
+      </ul>
+    </div>
+  </div>
+</nav>

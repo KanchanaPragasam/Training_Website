@@ -1,0 +1,104 @@
+<section class="faq-section">
+  <div class="container">
+    <div class="row">
+      <!-- Left: FAQ Topic -->
+      <div class="col-md-9">
+        <h2 class="primary-color faq-title">Frequently Asked Questions</h2>
+        <p>
+          Curious? Explore our FAQ section to get all the info you need — no
+          hassle!
+        </p>
+      </div>
+
+      <!-- Right: Image -->
+      <div class="col-md-3 d-flex justify-content-end">
+        <img
+          src="../../../assets/images/faq.png"
+          alt="FAQ Image"
+          class="faq-image"
+        />
+      </div>
+    </div>
+
+    <!-- Categories Slider -->
+    <div
+      class="faq-categories-slider"
+      role="tablist"
+      aria-label="FAQ Categories"
+      #sliderRef
+      (scroll)="onCategoryScroll()"
+    >
+      <div
+        class="faq-category"
+        *ngFor="let category of categories"
+        (click)="selectCategory(category)"
+        [class.active]="selectedCategory === category"
+        tabindex="0"
+        role="tab"
+        [attr.aria-selected]="selectedCategory === category"
+        [attr.aria-controls]="'tabpanel-' + removeSpaces(category)"
+        (keydown.enter)="selectCategory(category)"
+        (keydown.space)="selectCategory(category); $event.preventDefault()"
+      >
+        {{ category }}
+      </div>
+    </div>
+
+    <!-- Scrollbar under category -->
+    <div
+      class="faq-scrollbar-track"
+      (mousedown)="startDrag($event)"
+      (touchstart)="startDrag($event)"
+    >
+      <div
+        class="faq-scrollbar-thumb"
+        [style.width.%]="thumbWidth"
+        [style.left.%]="thumbLeft"
+      ></div>
+    </div>
+
+    <!-- FAQs List for selected category -->
+    <!-- FAQs List for selected category -->
+    <div class="mb-3 d-flex gap-3"></div>
+    <!-- 🔹 Expand / Collapse All link on the right -->
+    <div class="faq-toggle-link text-end mb-3">
+      <span
+        class="toggle-text primary-color text-decoration-underline cursor-pointer"
+        (click)="toggleAllFAQs()"
+      >
+        {{ allExpanded ? "Collapse All" : "Expand All" }}
+      </span>
+    </div>
+
+    <div class="accordion accordion-flush" id="accordionFlushExample">
+      <div
+        class="accordion-item"
+        *ngFor="let item of groupedFaqs[selectedCategory]; let i = index"
+      >
+        <h2 class="accordion-header" [attr.id]="'heading' + i">
+          <div
+            class="accordion-button"
+            [ngClass]="{ collapsed: !item.isOpen }"
+            type="button"
+            (click)="toggleItem(i)"
+            [attr.aria-expanded]="item.isOpen"
+            [attr.aria-controls]="'collapse' + i"
+          >
+            {{ item.question }}
+          </div>
+        </h2>
+        <div
+          class="accordion-collapse collapse"
+          [class.show]="item.isOpen"
+          [attr.id]="'collapse' + i"
+          [attr.aria-labelledby]="'heading' + i"
+          data-bs-parent="#accordionFlushExample"
+        >
+          <div class="accordion-body">
+            {{ item.answer }}
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>

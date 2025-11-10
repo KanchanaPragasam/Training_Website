@@ -1,0 +1,410 @@
+@use "../../../../assets/styles/main.scss" as *;
+@use "sass:color";
+
+// ---------------------------
+// Banner Meta + Pills
+// ---------------------------
+h3 {
+  position: relative;
+  padding-left: 20px; /* space for the square */
+}
+
+.banner-pill {
+  position: relative;
+  padding-left: 1rem;
+}
+
+.banner-pill::after,
+h3::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 3px;
+  background-color: $primary-color;
+  border-radius: 2px;
+}
+
+i {
+  color: $primary-color;
+}
+
+// ---------------------------
+// Who can Enroll
+// ---------------------------
+.enroll-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.enroll-chip {
+  display: flex;
+  align-items: flex-start;
+
+  /* optional: limit width */
+}
+
+.enroll-chip i {
+  flex-shrink: 0; /* icon does not shrink */
+  margin-top: 2px; /* vertical align with text */
+}
+
+.enroll-text {
+  display: inline-block;
+  margin-left: 4px;
+  word-wrap: break-word;
+}
+
+// ---------------------------
+// Enroll Popup
+// ---------------------------
+.enroll-popup {
+  position: fixed;
+  bottom: 0rem;
+  right: 0rem;
+  z-index: 2000;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+
+  width: auto;
+  height: auto;
+  pointer-events: auto;
+}
+
+
+// ---------------------------
+// Certificate Section
+// ---------------------------
+.certificate-section {
+  position: relative;
+  overflow: hidden;
+  padding: 2rem 0;
+}
+
+.certificate-section::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: $primary-color;
+  clip-path: polygon(0 0, 55% 0, 45% 100%, 0% 100%);
+  z-index: 0;
+}
+
+.certificate-section .container {
+  position: relative;
+  z-index: 1;
+}
+.bgs-light {
+  background-color: $white-color;
+  border-radius: 10px;
+  border: 5px solid $primary-color;
+}
+
+.certificate-img {
+  max-width: 250px;
+  display: block;
+  border: 3px solid #333;
+}
+
+.certificate-content {
+  flex: 1;
+}
+
+.certificate {
+  position: relative;
+  display: inline-block;
+  padding: 10px; /* space for corner lines */
+}
+
+.certificate::before,
+.certificate::after,
+.certificate span::before,
+.certificate span::after {
+  content: "";
+  position: absolute;
+  background-color: $white-color;
+  width: 80px; /* length of the corner line */
+  height: 3px; /* thickness of the line */
+}
+
+/* Top-left horizontal */
+.certificate::before {
+  top: 0;
+  left: 0;
+}
+
+/* Top-left vertical */
+.certificate::after {
+  top: 0;
+  left: 0;
+  width: 3px;
+  height: 80px;
+}
+
+/* Bottom-right horizontal */
+.certificate span::before {
+  bottom: 0;
+  right: 0;
+}
+
+/* Bottom-right vertical */
+.certificate span::after {
+  bottom: 0;
+  right: 0;
+  width: 3px;
+  height: 80px;
+}
+
+// ---------------------------
+// Syllabus Section
+// ---------------------------
+
+#syllabus {
+  padding: 2rem 1rem;
+
+  h3 {
+    margin-bottom: 2rem;
+  }
+
+  > ul {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    padding: 0;
+    list-style: none;
+    margin: 0;
+  }
+
+  > ul > li {
+    background: $white-color;
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.06);
+    transition: box-shadow 0.3s ease;
+  }
+
+  > ul > li:hover {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.12);
+  }
+
+  strong {
+    font-weight: 600;
+    color: $primary-color;
+    margin-bottom: 0.8rem;
+    display: block;
+  }
+
+  li ul {
+    padding-left: 1rem;
+    margin: 0;
+    list-style: none;
+  }
+
+  li ul li {
+    color: $text-color;
+    margin: 1.5rem 0rem;
+    position: relative;
+    padding: 0.5rem;
+    border-radius: 1rem;
+    // box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+// ---------------------------
+// Banner Section
+// ---------------------------
+.banner-section {
+  position: relative;
+  height: 300px;
+  background-size: cover;
+  background-position: center;
+
+  .banner-video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+  }
+
+  .banner-content {
+    position: absolute;
+    height: 100%;
+    align-content: center;
+    color: $white-color;
+    z-index: 2;
+
+    h1 {
+      font-weight: 700;
+      margin-bottom: 0.5rem;
+    }
+  }
+}
+// ---------------------------------------------form
+
+// ---------------------------
+// Sticky Tabs
+// ---------------------------
+
+.center-tabs {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  background-color: $white-color;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.tabs-nav {
+  display: flex;
+  justify-content: space-between;
+
+  .nav-item {
+    flex: 1;
+    text-align: center;
+
+    .nav-link {
+      width: 100%;
+      font-weight: 600;
+      padding: 0.8rem;
+      border-radius: 0;
+      color: $text-color;
+      background: transparent;
+      border: none;
+      position: relative;
+
+      &.active {
+        border-bottom: 2px solid $primary-color;
+      }
+
+      &:hover {
+        background-color: $white-color-hover;
+        color: $primary-color;
+      }
+    }
+  }
+}
+
+$sticky-tab-height: 60px;
+
+#overview,
+#syllabus,
+#career {
+  scroll-margin-top: $sticky-tab-height;
+  padding: 1.8rem 0rem;
+  padding-bottom: 2rem;
+
+  p {
+    text-align: justify;
+  }
+  .career-card {
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    border: 0.5px solid $primary-color;
+
+    p {
+      text-align: center;
+    }
+
+    &:hover {
+      
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.1);
+    }
+  }
+}
+
+.tab-content {
+  margin-top: 1rem;
+}
+
+// ---------------------------
+// Syllabus
+// ---------------------------
+.syllabus > ul > li {
+  color: $text-color;
+  background-color: $primary-color-light;
+  padding-left: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  border-left: 4px solid $primary-color;
+}
+
+// ---------------------------
+// Message Box of Mail
+// ---------------------------
+#message {
+  border: 1px solid #ccc;
+  border-radius: 0.375rem;
+  background-color: $white-color;
+
+  ::ng-deep .ql-container {
+    min-height: auto;
+    height: auto;
+    overflow: hidden;
+  }
+
+  ::ng-deep .ql-editor {
+    min-height: 3rem;
+    max-height: 6rem;
+    overflow-y: auto;
+  }
+}
+
+
+// ---------------------------
+// tools covered
+// ---------------------------
+.tools-container {
+  display: flex;
+  flex-wrap: wrap; /* Wrap to next line if space is insufficient */
+  gap: 1.25rem; /* Space between chips */
+}
+
+.tool-chip {
+  display: inline-block;
+  padding: 4px 10px;
+  // font-size: 12px;
+  background-color: $primary-color-light; /* light background */
+  border: 1px solid $primary-color; /* thin outline */
+  border-radius: 4rem; /* rounded edges */
+  white-space: nowrap; /* prevent breaking inside the chip */
+  color: #333;
+}
+
+// ---------------------------
+// Responsive Adjustments
+// ---------------------------
+@media (max-width: 768px) {
+  .enroll-popup {
+    top: 50%;
+    left: 50%;
+    right: auto;
+    bottom: auto;
+    transform: translate(-50%, -50%);
+    justify-content: center;
+    width: 100%;
+    padding: 0 1rem;
+  }
+
+  .enroll-popup-content {
+    width: 100% !important;
+    max-width: none !important;
+    min-width: auto !important;
+    border-radius: 10px;
+    padding: 1rem;
+  }
+
+  .banner-section {
+    height: 200px;
+  }
+  .tools-container {
+    gap: 0.5rem;
+  }
+}

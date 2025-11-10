@@ -1,0 +1,87 @@
+<faqs>
+  <!-- General Enrollment -->
+  <faq id="1" category="Enrollment">
+    <question>How do I enroll in a course?</question>
+    <answer>You can browse our course catalog, select a course, and click “Enroll Now” to begin registration and payment.</answer>
+  </faq>
+  <faq id="2" category="Enrollment">
+    <question>Can I switch to another course after enrollment?</question>
+    <answer>Yes, course switching is allowed within 3 days of enrollment, if the new course is of equal or lesser value.</answer>
+  </faq>
+  <faq id="3" category="Enrollment">
+    <question>Do I need prior experience?</question>
+    <answer>Some courses require prior knowledge, while beginner courses are designed for freshers. Please refer to the prerequisites in the course description.</answer>
+  </faq>
+
+  <!-- Course Content -->
+  <faq id="4" category="Course Content">
+    <question>Are the courses self-paced or instructor-led?</question>
+    <answer>We offer both. Each course specifies whether it is self-paced, live online, or classroom-based.</answer>
+  </faq>
+  <faq id="5" category="Course Content">
+    <question>How long will it take to complete the course?</question>
+    <answer>Completion time varies by course and learner pace. Most courses take between 4–8 weeks.</answer>
+  </faq>
+  <faq id="6" category="Course Content">
+    <question>How will I be assessed?</question>
+    <answer>Assessment methods vary but usually include quizzes, assignments, and final projects.</answer>
+  </faq>
+  <faq id="7" category="Course Content">
+    <question>What are the prerequisites for the course?</question>
+    <answer>Each course has specific prerequisites, listed in its description.</answer>
+  </faq>
+
+  <!-- Technical Requirements -->
+  <faq id="8" category="Technical Requirements">
+    <question>Can I access the course on mobile?</question>
+    <answer>Yes, our platform supports mobile, tablet, and desktop devices.</answer>
+  </faq>
+  <faq id="9" category="Technical Requirements">
+    <question>What are the system requirements to access the course?</question>
+    <answer>A modern browser and stable internet connection are sufficient. Some courses may need additional tools.</answer>
+  </faq>
+  <faq id="10" category="Technical Requirements">
+    <question>How long do I have access to the course materials?</question>
+    <answer>Self-paced courses offer lifetime access. Instructor-led course access may be time-bound.</answer>
+  </faq>
+
+  <!-- Certification and Outcomes -->
+  <faq id="11" category="Certification and Outcomes">
+    <question>Do you provide certification after completion?</question>
+    <answer>Yes, all courses offer a certificate of completion. Some professional programs provide globally recognized certifications.</answer>
+  </faq>
+  <faq id="12" category="Certification and Outcomes">
+    <question>Do you offer any career or placement support?</question>
+    <answer>Yes, select programs offer resume reviews, interview prep, and placement assistance.</answer>
+  </faq>
+
+  <!-- Payments and Refunds -->
+  <faq id="13" category="Payments and Refunds">
+    <question>Is there a refund policy if I’m not satisfied with the course?</question>
+    <answer>Yes, we offer a refund within 7 days of enrollment, subject to our refund policy.</answer>
+  </faq>
+  <faq id="14" category="Payments and Refunds">
+    <question>Are there any discounts or offers available?</question>
+    <answer>We frequently offer seasonal discounts and promo codes. Subscribe to our newsletter for updates.</answer>
+  </faq>
+  <faq id="15" category="Payments and Refunds">
+    <question>Can I pay in installments?</question>
+    <answer>Yes, installment or EMI options are available for some high-value courses.</answer>
+  </faq>
+
+  <!-- Support -->
+  <faq id="16" category="Support">
+    <question>What if I have doubts during the course?</question>
+    <answer>We provide doubt-clearing sessions, forums, and mentor/instructor access for all courses.</answer>
+  </faq>
+  <faq id="17" category="Support">
+    <question>Who do I contact for technical support?</question>
+    <answer>Contact our support team via the Help Center or email support@example.com.</answer>
+  </faq>
+
+  <!-- Corporate Training -->
+  <faq id="18" category="Corporate Training">
+    <question>Do you offer group or corporate training?</question>
+    <answer>Yes, we provide customized corporate training packages. Please contact our sales team.</answer>
+  </faq>
+</faqs>

@@ -1,0 +1,281 @@
+<div class="enrollment-section">
+  <div class="stepper-container container">
+    <div class="form-container">
+      <h1 class="text-center primary-color">Enrollment Form</h1>
+
+      <!-- Step Indicator -->
+      <div class="step-indicator">
+        <div [class.active]="currentStep >= 1" (click)="goToStep(1)"><i class="fas fa-user"></i></div>
+        <div class="line" [class.active]="currentStep > 1"></div>
+        <div [class.active]="currentStep >= 2" (click)="goToStep(2)"><i class="fas fa-book"></i></div>
+        <div class="line" [class.active]="currentStep > 2"></div>
+        <div [class.active]="currentStep === 3"><i class="fas fa-check"></i></div>
+      </div>
+
+      <!-- Step 1: Personal Info -->
+      <form *ngIf="currentStep === 1" [formGroup]="personalForm" (ngSubmit)="$event.preventDefault()">
+        <h3 class="mb-3">Personal Details</h3>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <label class="required-label">First Name</label>
+            <input formControlName="firstName" class="form-control" />
+          </div>
+
+          <div class="col-md-6 mb-4">
+            <label class="required-label">Last Name</label>
+            <input formControlName="lastName" class="form-control" />
+          </div>
+
+          <div class="col-md-4 mb-4" appToggleArrow>
+            <label class="required-label">Gender</label>
+            <div class="input-with-icon">
+              <select formControlName="gender" class="form-control styled-select">
+                <option value="" disabled>Select</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Others">Others</option>
+              </select>
+              <span class="dropdown-icon">&#11167;</span>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <label class="required-label">DOB</label>
+            <div class="dropdown-wrapper">
+              <input
+                type="text"
+                formControlName="dob"
+                class="form-control dropdown-input"
+                [matDatepicker]="picker"
+                readonly
+                autocomplete="off"
+              />
+              <mat-datepicker-toggle [for]="picker" matSuffix></mat-datepicker-toggle>
+              <mat-datepicker #picker></mat-datepicker>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <label class="required-label">Current Occupation</label>
+            <div class="input-with-icon">
+              <select formControlName="occupation" class="form-control styled-select">
+                <option value="" disabled>Select</option>
+                <option value="Professional">Professional</option>
+                <option value="Non-Professional">Non-Professional</option>
+                <option value="Student">Student</option>
+              </select>
+              <span class="dropdown-icon">&#11167;</span>
+            </div>
+          </div>
+
+          <div class="col-md-12 mb-4">
+            <label class="required-label">Address</label>
+            <input formControlName="address" class="form-control" />
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <label class="required-label">City</label>
+            <input formControlName="city" class="form-control" />
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <label class="required-label">Pincode</label>
+            <input formControlName="pincode" class="form-control" />
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <label class="required-label">Country</label>
+            <div class="dropdown-wrapper" [class.open]="showDropdown">
+              <input
+                type="text"
+                class="form-control dropdown-input"
+                formControlName="country"
+                [value]="selectedCountryName"
+            
+                (focus)="showDropdown = true"
+                (blur)="hideDropdown()"
+                placeholder="Select Country"
+                autocomplete="off"
+              />
+              <span class="dropdown-icon">&#11167;</span>
+
+              <ul *ngIf="showDropdown && filteredCountries.length" class="list-group position-absolute w-100 bg-white border country-dropdown-list">
+                <li
+                  *ngFor="let country of filteredCountries"
+                  class="list-group-item list-group-item-action"
+                  (mousedown)="selectCountry(country)"
+                >
+                  {{ country.name }}
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4">
+            <label class="required-label">Mobile ({{ mobilePrefix }})</label>
+            <input formControlName="mobile" class="form-control" placeholder="Enter mobile number" />
+          </div>
+
+          <div class="col-md-8 mb-4">
+            <label class="required-label">Email</label>
+            <input formControlName="email" type="email" class="form-control" />
+          </div>
+
+          <div class="col-md-12 mb-4">
+            <label>Tell us more about yourself and attach a link to your resume</label>
+            <textarea formControlName="about" class="form-control"></textarea>
+          </div>
+
+          <div class="col-md-12 mb-4">
+            <label class="required-label">Upload your resume (only PDF, DOCX files allowed)</label>
+            <input type="file" (change)="onFileSelected($event)" />
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-end">
+          <button type="button" class="primary-button mt-3" (click)="nextStep()">Next</button>
+        </div>
+      </form>
+
+      <!-- Step 2: Course/Internship Info -->
+      <form *ngIf="currentStep === 2" [formGroup]="courseForm" (ngSubmit)="$event.preventDefault()">
+        <h3>Course/Internship Details</h3>
+        <div class="row">
+          <div class="col-md-4 mb-4">
+            <label class="required-label">Select Type</label>
+            <div class="input-with-icon">
+              <select formControlName="type" class="form-control styled-select">
+                <option value="" disabled>Select Type</option>
+                <option value="course">Course</option>
+                <option value="internship">Internship</option>
+              </select>
+              <span class="dropdown-icon">&#11167;</span>
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-4" *ngIf="courseForm.get('type')?.value === 'internship'">
+            <label class="required-label">Select Program</label>
+            <select formControlName="selectedProgram" class="form-control" (change)="onProgramChange()">
+              <option value="" disabled>Select program</option>
+              <option *ngFor="let program of internshipPrograms" [value]="program.name">
+                {{ program.name }}
+              </option>
+            </select>
+          </div>
+
+          <div class="col-md-6 mb-4" *ngIf="courseForm.get('type')?.value === 'internship' && availableInternships.length">
+            <label class="required-label">Select Internship</label>
+            <select formControlName="selectedInternship" class="form-control">
+              <option value="" disabled>Select internship</option>
+              <option *ngFor="let internship of availableInternships" [value]="internship.title">
+                {{ internship.title }}
+              </option>
+            </select>
+          </div>
+
+          <div class="col-md-4 mb-4" *ngIf="courseForm.get('type')?.value === 'course'">
+            <label class="required-label">Selected Course</label>
+            <div class="input-with-icon">
+              <select formControlName="selectedCourse" class="form-control styled-select">
+                <option value="" disabled>Select a course</option>
+                <option *ngFor="let course of allCourses$ | async" [value]="course">
+                  {{ course }}
+                </option>
+              </select>
+              <span class="dropdown-icon">&#11167;</span>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4" *ngIf="courseForm.get('type')?.value === 'course'">
+            <label class="required-label">Schedule (IST)</label>
+            <div class="input-with-icon">
+              <select formControlName="schedule" class="form-control styled-select">
+                <option value="" disabled>Select a schedule</option>
+                <option>Morning</option>
+                <option>Afternoon</option>
+                <option>Evening</option>
+                <option>Night</option>
+              </select>
+              <span class="dropdown-icon">&#11167;</span>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4" *ngIf="courseForm.get('type')?.value === 'course'">
+            <label class="required-label">Mode</label>
+            <div class="input-with-icon">
+              <select formControlName="mode" class="form-control styled-select">
+                <option value="" disabled>Select mode</option>
+                <option>Online</option>
+                <option>In-person</option>
+                <option>Hybrid</option>
+              </select>
+              <span class="dropdown-icon">&#11167;</span>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4" *ngIf="courseForm.get('type')?.value === 'course'">
+            <label class="required-label">Planned Start Date</label>
+            <div class="dropdown-wrapper">
+              <input
+                type="text"
+                class="form-control dropdown-input"
+                formControlName="plannedStart"
+                [matDatepicker]="startPicker"
+                placeholder="Select Start Date"
+                readonly
+              />
+              <mat-datepicker-toggle [for]="startPicker" matSuffix></mat-datepicker-toggle>
+              <mat-datepicker #startPicker></mat-datepicker>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-4" *ngIf="courseForm.get('type')?.value === 'course'">
+            <label class="required-label">Planned End Date</label>
+            <div class="dropdown-wrapper">
+              <input
+                type="text"
+                class="form-control dropdown-input"
+                formControlName="plannedEnd"
+                [matDatepicker]="endPicker"
+                placeholder="MM/DD/YYYY"
+                readonly
+              />
+              <mat-datepicker-toggle [for]="endPicker" matSuffix></mat-datepicker-toggle>
+              <mat-datepicker #endPicker></mat-datepicker>
+            </div>
+          </div>
+
+          <div class="col-md-12">
+            <label>Additional Comments</label>
+            <textarea formControlName="comments" class="form-control"></textarea>
+          </div>
+        </div>
+
+        <div class="d-flex justify-content-between mt-3">
+          <button type="button" class="secondary-button" (click)="prevStep()">Back</button>
+          <button type="button" class="primary-button" (click)="nextStep()">Next</button>
+        </div>
+      </form>
+
+      <!-- Step 3: Acknowledgement -->
+      <form *ngIf="currentStep === 3" [formGroup]="acknowledgementForm" (ngSubmit)="submitForm()">
+        <h3>Acknowledgement</h3>
+
+        <div class="d-flex align-items-start mb-3">
+          <input type="checkbox" id="testCheck" formControlName="declaration" class="me-2 mt-1" />
+          <label for="testCheck" class="mb-0">I declare that all information provided is true and accurate.</label>
+        </div>
+
+        <re-captcha
+          siteKey="6LfEIeArAAAAAChhPh6Qivbtg-5G1ufcaC3PXxX3"
+          (resolved)="onCaptchaResolved($event)"
+        ></re-captcha>
+
+        <div class="d-flex justify-content-between mt-3">
+          <button type="button" class="secondary-button" (click)="prevStep()">Back</button>
+          <button type="submit" class="primary-button">Submit</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,114 @@
+@use "../../../assets/styles/main.scss" as *;
+
+/*----------------------------------------
+  Enrollment Section Background
+----------------------------------------*/
+.enrollment-section {
+  background-image: url("../../../assets/images/enrollment-banner.jpg");
+  background-size: cover;
+  background-position: center;
+}
+
+/*----------------------------------------
+  Stepper Container & Indicators
+----------------------------------------*/
+.stepper-container {
+  margin: auto;
+  padding: 2rem;
+
+  .step-indicator {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+
+    div {
+      width: 35px;
+      height: 35px;
+      border-radius: 50%;
+      background: #ccc;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      color: $white-color;
+      cursor: pointer;
+
+      &.active {
+        background: $primary-color;
+        box-shadow: 0 5px 20px rgba(0,0,0,0.15);
+      }
+    }
+
+    .line {
+      flex: 1;
+      height: 4px;
+      background: #ccc;
+      margin: 0 5px;
+
+      &.active {
+        background: $primary-color;
+      }
+    }
+  }
+}
+
+/*----------------------------------------
+  Form Container
+----------------------------------------*/
+.form-container {
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 4rem;
+}
+
+/*----------------------------------------
+  Input / Select Fields with Dropdown Icon
+----------------------------------------*/
+.input-with-icon {
+  position: relative;
+
+  .styled-select {
+    appearance: none;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    background: #fff;
+  }
+
+  .dropdown-icon {
+    position: absolute;
+    right: 12px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: $primary-color;
+    pointer-events: none;
+  }
+}
+
+/*----------------------------------------
+  Editable Expandable Textarea
+----------------------------------------*/
+textarea.form-control {
+  min-height: 100px;
+  max-height: 200px;
+  overflow-y: auto;
+  resize: vertical;
+}
+
+/*----------------------------------------
+  Country Dropdown Scroll Section
+----------------------------------------*/
+.country-dropdown-list {
+  max-height: 200px;
+  overflow-y: auto;
+}
+
+/*----------------------------------------
+  Responsive Styling
+----------------------------------------*/
+@media screen and (max-width: 768px) {
+  .form-container {
+    padding: 2rem;
+  }
+}

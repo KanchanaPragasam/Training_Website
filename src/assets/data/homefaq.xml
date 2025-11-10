@@ -1,0 +1,28 @@
+<faqs>
+
+    <faq>
+        <question>How do I enroll in a course?</question>
+        <answer>You can browse the courses, select the one you want, and click on "Enroll Now". You’ll then be guided through the registration and payment process.</answer>
+    </faq>
+
+    <faq>
+        <question>Do you provide certification after completion?</question>
+        <answer>Yes, all courses provide a certificate of completion. Professional certification courses like PMP and Scrum also provide globally recognized certificates.</answer>
+    </faq>
+
+    <faq>
+        <question>Are the courses self-paced or instructor-led?</question>
+        <answer>We provide both options depending on the course. You can check the course details to see if it’s self-paced, live online, or classroom training.</answer>
+    </faq>
+
+    <faq>
+        <question>Can I access the course on mobile?</question>
+        <answer>Yes, our courses are accessible on desktop, tablet, and mobile devices, allowing you to learn anytime, anywhere.</answer>
+    </faq>
+
+    <faq>
+        <question>Is there any refund policy?</question>
+        <answer>Yes, refunds are available within 7 days of enrollment.</answer>
+    </faq>
+
+</faqs>

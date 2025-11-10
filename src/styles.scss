@@ -1,0 +1,169 @@
+@use "assets/styles/main" as *;
+
+html {
+  font-size: clamp(13px, 1.2vw, 16px);
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+.container {
+  padding: 0rem 2rem;
+}
+.text-uppercase {
+  text-transform: capitalize;
+}
+
+// .section-subtitle {
+//   color: $primary-color;
+//   margin-bottom: 1.5rem;
+// }
+
+.text-decoration-underline:hover {
+  color: $secondary-color !important;
+  cursor: pointer;
+}
+
+// ---------------------------
+// required label
+// ---------------------------
+.required-label::after {
+  content: " *";
+  color: red;
+}
+
+// ---------------------------
+// faq section
+// ---------------------------
+.faq-section {
+  padding: 4rem 0;
+
+  .faq-main {
+    h2 {
+      
+    }
+  }
+  .accordion-flush {
+    > .accordion-item {
+      margin-bottom: 1rem;
+
+      .accordion-button {
+        background-color: $primary-color-light !important;
+        color: $text-color !important;
+        border-left: 3px solid $primary-color;
+        padding: 1rem;
+        transition: background-color 0.3s;
+
+        &:focus:not(:focus-visible) {
+          outline: none;
+          box-shadow: none;
+        }
+      }
+
+      .accordion-body {
+        background-color: $primary-color-light !important;
+        padding: 1rem;
+        border-radius: 0 0 0.25rem 0.25rem;
+        color: $text-color;
+      }
+    }
+  }
+
+
+  // Optional spacing between the text and accordion on large screens
+  .faq-main {
+    padding-right: 2rem;
+  }
+
+  // "More FAQs" link styling
+  .primary-color {
+    color: $primary-color;
+    cursor: pointer;
+
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
+
+
+// for the input box hightlight remove
+input.no-focus:focus {
+  outline: none !important;
+  box-shadow: none !important;
+  border-color: #ccc !important;
+}
+
+.icon-color {
+  color: $primary-color !important;
+}
+.sub-topic {
+  color: $secondary-color;
+}
+
+// ---------------------------
+// Contact Form Styles
+// ---------------------------
+// ===========================
+// 🌐 Global Form Styles
+// ===========================
+
+// SnackBar PopUp
+
+.custom-snackbar {
+  top: 20px;
+  border: 1px solid #34c724;
+  background-color: #f1ffef;
+  color: #34c724;
+  font-weight: 500;
+  border-radius: 4px;
+    z-index:10000 !important;
+}
+
+.custom-snackbar-error {
+  top: 20px !important;
+  border: 1px solid #f54a45;
+  background-color: #ffe9e8;
+  color: #f54a45;
+  font-weight: 500 !important;
+  border-radius: 4px !important;
+
+}
+
+.primary-color {
+  color: $primary-color;
+}
+
+@media (max-width:768px){
+  .custom-snackbar,
+  .custom-snackbar-error {
+    top: 20px !important;  
+    font-size: 14px;   
+      z-index:10000 !important;     
+  }
+  
+}
+// @media (max-width: 992px) {
+//   html {
+//     font-size: 13px;
+//   }
+// }
+::ng-deep .mat-form-field-suffix .mat-icon.mat-warn {
+  display: none !important;
+}

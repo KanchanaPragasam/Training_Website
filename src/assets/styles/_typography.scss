@@ -1,0 +1,59 @@
+
+html {
+  font-size: 16px;
+
+}
+body{
+
+}
+
+
+:root {
+  --font-h1: clamp(2.5rem, 4vw, 4.75rem);
+  --font-h2: clamp(2rem, 3vw, 3rem);
+  --font-h3: clamp(1.75rem, 2.5vw, 2.5rem);
+  --font-h4: clamp(1.5rem, 2vw, 2rem);
+  --font-h5: clamp(1.25rem, 1.5vw, 1.75rem);
+  --font-h6: clamp(1rem, 1vw, 1.25rem);
+
+  --font-p: clamp(1rem, 1.1vw, 1.125rem);
+  --font-span: clamp(0.9rem, 1vw, 1rem);
+  --font-i: clamp(1rem, 0.9vw, 1.125rem);
+  --font-a: clamp(1rem, 1.15vw, 1.2rem);
+
+  --font-body: clamp(1rem, 1.2vw, 1.125rem);
+  --font-small: clamp(0.875rem, 1vw, 1rem);
+}
+
+
+$font-h1: var(--font-h1);
+$font-h2: var(--font-h2);
+$font-h3: var(--font-h3);
+$font-h4: var(--font-h4);
+$font-h5: var(--font-h5);
+$font-h6: var(--font-h6);
+
+$font-body: var(--font-body);
+$font-small: var(--font-small);
+
+$font-p: var(--font-p);
+$font-span: var(--font-span);
+$font-i: var(--font-i);
+$font-a: var(--font-a);
+
+
+// ✅ Global application
+h1 { font-size: $font-h1; }
+h2 { font-size: $font-h2; }
+h3 { font-size: $font-h3; }
+h4 { font-size: $font-h4; }
+h5 { font-size: $font-h5; }
+h6 { font-size: $font-h6; }
+
+p { font-size: $font-p; }
+span { font-size: $font-span; }
+i { font-size: $font-i; }
+a { font-size: $font-a; text-decoration: none; }
+
+body { font-size: $font-body; }
+small { font-size: $font-small; }

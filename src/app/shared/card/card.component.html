@@ -1,0 +1,22 @@
+<div class="card" (click)="goToCourseDetails(course)">
+  <!-- Image -->
+  <div class="card-image">
+    <img [src]="'assets/images/' + course.image" [alt]="course.courseTitle" loading="eager" />
+  </div>
+
+  <!-- Content -->
+  <div class="card-content">
+    <div class="category">
+      <span>{{ course.courseCategory }}</span>
+    </div>
+    <h3 class="card-title">{{ course.courseTitle }}</h3>
+    <div class="card-footer">
+      <div class="duration">
+        <i class="bi bi-clock me-1"></i> {{ course.courseDuration }}
+      </div>
+      <button class="primary-button" (click)="goToCourseDetails(course); $event.stopPropagation()">
+        Learn More...
+      </button>
+    </div>
+  </div>
+</div>

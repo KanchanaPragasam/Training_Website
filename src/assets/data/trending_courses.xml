@@ -1,0 +1,352 @@
+<courses>
+    <course id="1" slug="full-stack-development">
+        <image>full-stack-development.webp</image>
+        <video>full-stack-bg.webm</video>
+        <courseCategory>Web Development</courseCategory>
+        <courseTitle>Full Stack Development</courseTitle>
+        <courseDescription>
+            <desc>Master both frontend and backend development</desc>
+            <desc>Hands-on projects with Angular and Spring Boot</desc>
+            <desc>Database integration and REST APIs</desc>
+        </courseDescription>
+        <courseDuration>6 Months</courseDuration>
+        <courseStudents>1500</courseStudents>
+        <overview>This course is designed to provide complete end-to-end training in Full Stack Development, covering everything from the front-end user interface to the back-end server and database management. You will learn to design, develop, test, and deploy robust and scalable web applications using industry-standard technologies. By the end of this course, you will be able to create full-fledged applications independently and be job-ready for Full Stack Developer roles.</overview>
+        <whoShouldEnroll>
+            <enroll>Beginners who want to start a career in web development</enroll>
+            <enroll>Front-end developers looking to learn back-end development</enroll>
+            <enroll>Back-end developers seeking front-end expertise</enroll>
+            <enroll>Students, IT professionals, and career changers aiming for Full Stack roles</enroll>
+        </whoShouldEnroll>
+        <courseHighlights>
+            <highlight>Frontend with Angular</highlight>
+            <highlight>Backend with Spring Boot</highlight>
+            <highlight>Database integration and deployment</highlight>
+        </courseHighlights>
+        <syllabus>
+            <sections>6</sections>
+            <lessons>18</lessons>
+
+            <section id="1" title="Front-End Development (Angular and TypeScript)">
+                <lesson>Angular Basics and Project Setup</lesson>
+                <lesson>Data Binding and Forms</lesson>
+                <lesson>Routing and Observables</lesson>
+            </section>
+
+            <section id="2" title="Back-End Development (Spring Boot)">
+                <lesson>Spring Boot Setup and REST APIs</lesson>
+                <lesson>CRUD with JPA and Hibernate</lesson>
+                <lesson>Authentication and Security</lesson>
+            </section>
+
+            <section id="3" title="Database Management (SQL and NoSQL)">
+                <lesson>SQL Queries and Joins</lesson>
+                <lesson>Stored Procedures and Indexing</lesson>
+                <lesson>NoSQL with MongoDB</lesson>
+            </section>
+
+            <section id="4" title="Full Stack Integration">
+                <lesson>Angular + Spring Boot Integration</lesson>
+                <lesson>Validation and Error Handling</lesson>
+                <lesson>Testing and Debugging</lesson>
+            </section>
+
+            <section id="5" title="Deployment and DevOps Basics">
+                <lesson>Cloud Deployment (AWS/Heroku)</lesson>
+                <lesson>CI/CD Pipelines</lesson>
+                <lesson>Monitoring and Optimization</lesson>
+            </section>
+
+            <section id="6" title="Capstone Project">
+                <lesson>Real-world Full Stack App</lesson>
+                <lesson>User Authentication and Roles</lesson>
+                <lesson>Final Deployment and Portfolio</lesson>
+            </section>
+        </syllabus>
+        <toolsCovered>
+            <tool>Angular</tool>
+            <tool>TypeScript</tool>
+            <tool>HTML5</tool>
+            <tool>CSS3</tool>
+            <tool>JavaScript</tool>
+            <tool>Spring Boot</tool>
+            <tool>REST APIs</tool>
+            <tool>MySQL</tool>
+            <tool>PostgreSQL</tool>
+            <tool>MongoDB</tool>
+            <tool>Git and GitHub</tool>
+            <tool>Maven</tool>
+            <tool>Postman</tool>
+            <tool>Jenkins</tool>
+            <tool>AWS / Heroku</tool>
+        </toolsCovered>
+        <careerScope>
+            <scope>Fullstack developer</scope>
+            <scope>Angular developer</scope>
+            <scope>Springboot developer</scope>
+            <scope>Web application developer</scope>
+            <scope>Front-end / Back-end engineer</scope>
+            <scope>Cloud deployment engineer</scope>
+
+        </careerScope>
+        <faq>
+            <question id="1">
+                <q>What are the prerequisites for this course?</q>
+                <a>Basic knowledge of programming and databases is recommended, but not mandatory.</a>
+            </question>
+            <question id="2">
+                <q>Which databases are covered?</q>
+                <a>The course covers MySQL, PostgreSQL, and MongoDB with practical projects.</a>
+            </question>
+            <question id="3">
+                <q>Will I get hands-on projects in both frontend and backend?</q>
+                <a>Yes, you will work on real projects using Angular for frontend and Spring Boot for backend.</a>
+            </question>
+            <question id="4">
+                <q>Do I need prior experience in web development?</q>
+                <a>No, the course starts from basics and progresses to advanced full-stack concepts.</a>
+            </question>
+            <question id="5">
+                <q>Are deployment platforms like AWS/Heroku covered?</q>
+                <a>Yes, you will learn deployment on platforms like AWS and Heroku.</a>
+            </question>
+        </faq>
+    </course>
+    <course id="2" slug="selenium-testing">
+        <image>selenium-testing.webp</image>
+        <video>selenium-testing-bg.webm</video>
+        <courseCategory>Software Testing</courseCategory>
+        <courseTitle>Selenium Testing</courseTitle>
+        <courseDescription>
+            <desc>Automate web applications</desc>
+            <desc>Learn Selenium WebDriver</desc>
+            <desc>Framework development with Java</desc>
+        </courseDescription>
+        <courseDuration>3 Months</courseDuration>
+        <courseStudents>800</courseStudents>
+
+        <overview>Automation testing is a critical skill in today’s software industry. This course introduces you to Selenium WebDriver, one of the most widely used tools for web automation. You’ll learn how to automate web applications across browsers, create reusable testing frameworks, and integrate your automation scripts with CI/CD pipelines like Jenkins. With hands-on exercises, you’ll build test cases for real-world projects and understand how to debug and maintain large test suites. The course emphasizes practical implementation, ensuring that by completion, you’ll be able to confidently work as a QA automation tester or test engineer.</overview>
+        <whoShouldEnroll>
+            <enroll>Beginners in software testing or QA who want to learn automation</enroll>
+            <enroll>Manual testers aiming to transition to automation testing</enroll>
+            <enroll>Developers looking to understand automated testing workflows</enroll>
+            <enroll>IT professionals aspiring to become QA Automation Engineers</enroll>
+        </whoShouldEnroll>
+        <courseHighlights>
+            <highlight>WebDriver and TestNG</highlight>
+            <highlight>Framework building</highlight>
+            <highlight>CI/CD integration</highlight>
+        </courseHighlights>
+        <syllabus>
+            <sections>7</sections>
+            <lessons>21</lessons>
+
+
+            <section id="1" title="Introduction to Software Testing">
+                <lesson>Basics: Manual vs Automated Testing</lesson>
+                <lesson>Types of Testing</lesson>
+                <lesson>Test Life Cycle and Test Case Design</lesson>
+            </section>
+
+            <section id="2" title="Selenium Overview">
+                <lesson>Selenium Components</lesson>
+                <lesson>Setup and Architecture</lesson>
+                <lesson>Working Mechanism</lesson>
+            </section>
+
+            <section id="3" title="Selenium WebDriver">
+                <lesson>Locators and Web Elements</lesson>
+                <lesson>Actions and Events</lesson>
+                <lesson>Synchronization and Handling Alerts/Frames</lesson>
+            </section>
+
+            <section id="4" title="Test Automation Frameworks">
+                <lesson>TestNG and JUnit Basics</lesson>
+                <lesson>Writing Test Cases and Assertions</lesson>
+                <lesson>Data-driven and Hybrid Frameworks</lesson>
+            </section>
+
+            <section id="5" title="Advanced Selenium Features">
+                <lesson>Dynamic Elements and AJAX Handling</lesson>
+                <lesson>Reports and Screenshots</lesson>
+                <lesson>Parallel Execution and Integration</lesson>
+            </section>
+
+            <section id="6" title="Continuous Integration (CI/CD)">
+                <lesson>Jenkins Pipelines</lesson>
+                <lesson>Scheduling and Version Control</lesson>
+                <lesson>Notifications and Reporting</lesson>
+            </section>
+
+            <section id="7" title="Real-Time Projects">
+                <lesson>E-commerce Automation</lesson>
+                <lesson>Banking App Automation</lesson>
+                <lesson>Regression Test Suite and Reports</lesson>
+            </section>
+        </syllabus>
+
+        <toolsCovered>
+            <tool>Selenium WebDriver</tool>
+            <tool>Selenium IDE</tool>
+            <tool>Selenium Grid</tool>
+            <tool>Java</tool>
+            <tool>TestNG</tool>
+            <tool>JUnit</tool>
+            <tool>Maven</tool>
+            <tool>Jenkins</tool>
+            <tool>Git and GitHub</tool>
+            <tool>Eclipse / IntelliJ IDEA</tool>
+            <tool>Browser Developer Tools</tool>
+        </toolsCovered>
+
+        <careerScope>
+            <scope>QA automation engineer</scope>
+            <scope>Software test engineer (Automation)</scope>
+            <scope>SDET (Software development engineer in test)</scope>
+            <scope>Manual tester transitioning to automation</scope>
+            <scope>Test lead / QA lead</scope>
+            <scope>DevOps engineer (with testing focus)</scope>
+            <scope>Junior QA / fresher in testing</scope>
+        </careerScope>
+        <faq>
+            <question id="1">
+                <q>Do I need prior programming knowledge?</q>
+                <a>Basic Java knowledge helps, but the course covers necessary Java concepts.</a>
+            </question>
+            <question id="2">
+                <q>Which testing frameworks are covered?</q>
+                <a>TestNG, JUnit, and Cucumber BDD are included.</a>
+            </question>
+            <question id="3">
+                <q>Will I learn automation for web applications only?</q>
+                <a>No, you will also learn API automation and basics of mobile testing with Appium.</a>
+            </question>
+            <question id="4">
+                <q>Is CI/CD integration covered?</q>
+                <a>Yes, Selenium automation will be integrated with Jenkins and GitHub workflows.</a>
+            </question>
+            <question id="5">
+                <q>Does the course include real-time projects?</q>
+                <a>Yes, industry-like automation projects are part of the curriculum.</a>
+            </question>
+        </faq>
+    </course>
+    <course id="3" slug="core-java">
+        <image>java.webp</image>
+        <video>java-core-bg.webm</video>
+        <courseCategory>Programming</courseCategory>
+        <courseTitle>Core Java</courseTitle>
+        <courseDescription>
+            <desc>Master Java basics and OOP</desc>
+            <desc>Practice with real examples</desc>
+            <desc>Foundation for advanced Java frameworks</desc>
+        </courseDescription>
+        <courseDuration>2 Months</courseDuration>
+        <courseStudents>2500</courseStudents>
+
+        <overview>Java remains one of the most versatile and widely used programming languages. This course builds a strong foundation in Java syntax, object-oriented programming, exception handling, data structures, and multithreading. You’ll practice concepts using hands-on coding challenges and mini-projects in popular IDEs like Eclipse and IntelliJ. By learning Java, you not only prepare yourself for advanced frameworks like Spring and Hibernate but also gain skills essential for backend development, enterprise systems, and Android development. It’s the perfect starting point for anyone aiming for a long-term career in software engineering.</overview>
+        <whoShouldEnroll>
+            <enroll>Beginners aiming to become professional Java developers</enroll>
+            <enroll>Programmers looking to strengthen Java fundamentals</enroll>
+            <enroll>Students and IT professionals preparing for Java-based roles</enroll>
+            <enroll>Anyone aiming for careers in backend, enterprise, or web development</enroll>
+        </whoShouldEnroll>
+        <courseHighlights>
+            <highlight>Object-Oriented Programming</highlight>
+            <highlight>Hands-on with Eclipse/IntelliJ</highlight>
+            <highlight>Mini projects included</highlight>
+        </courseHighlights>
+        <syllabus>
+            <sections>8</sections>
+            <lessons>24</lessons>
+
+
+            <section id="1" title="Java Basics">
+                <lesson>Introduction to Java and JVM Architecture</lesson>
+                <lesson>Installing JDK and IDE Setup</lesson>
+                <lesson>Data Types, Variables, Operators, and Control Statements</lesson>
+            </section>
+
+            <section id="2" title="OOP in Java">
+                <lesson>Classes and Objects</lesson>
+                <lesson>Methods and Constructors</lesson>
+                <lesson>Inheritance, Polymorphism, Encapsulation, Abstraction</lesson>
+            </section>
+
+            <section id="3" title="Exception Handling and Debugging">
+                <lesson>Types of Exceptions: Checked vs Unchecked</lesson>
+                <lesson>Try-Catch, Finally, Throw, and Throws</lesson>
+                <lesson>Creating Custom Exceptions and Debugging Techniques</lesson>
+            </section>
+
+            <section id="4" title="Collections and Generics">
+                <lesson>Collections Framework: List, Set, Map, Queue</lesson>
+                <lesson>Iterators and Enhanced For Loop</lesson>
+                <lesson>Generics, Sorting and Searching</lesson>
+            </section>
+
+            <section id="5" title="File Handling and I/O">
+                <lesson>File Class, FileReader, FileWriter</lesson>
+                <lesson>BufferedReader and BufferedWriter</lesson>
+                <lesson>Object Serialization and Deserialization</lesson>
+            </section>
+
+            <section id="6" title="Multithreading and Concurrency">
+                <lesson>Introduction to Threads and Runnable Interface</lesson>
+                <lesson>Thread Lifecycle, Priority and Synchronization</lesson>
+                <lesson>Concurrency Utilities and Real-world Use Cases</lesson>
+            </section>
+
+            <section id="7" title="JDBC and Database Connectivity">
+                <lesson>Introduction to JDBC and Drivers</lesson>
+                <lesson>Connecting Java with MySQL/PostgreSQL</lesson>
+                <lesson>Executing SQL Queries, Prepared Statements and Transactions</lesson>
+            </section>
+
+            <section id="8" title="Real-Time Projects">
+                <lesson>Banking System: Account Management and Transactions</lesson>
+                <lesson>Library Management System: Book Inventory and Borrowing</lesson>
+                <lesson>Student Management System: CRUD Operations</lesson>
+            </section>
+        </syllabus>
+
+        <toolsCovered>
+            <tool>Java SE</tool>
+            <tool>Eclipse / IntelliJ IDEA</tool>
+            <tool>JDK</tool>
+            <tool>JDBC</tool>
+            <tool>Git and GitHub</tool>
+        </toolsCovered>
+
+        <careerScope>
+            <scope>Java-developer</scope>
+            <scope>Software-developer</scope>
+            <scope>Backend-developer</scope>
+            <scope>Full-stack-developer</scope>
+            <scope>Automation-test-engineer</scope>
+            <scope>Application-developer</scope>
+        </careerScope>
+        <faq>
+            <question id="1">
+                <q>Is this course beginner-friendly?</q>
+                <a>Yes, it starts from scratch and covers up to advanced Java concepts.</a>
+            </question>
+            <question id="2">
+                <q>Which key topics are covered?</q>
+                <a>OOP, Collections, Exception Handling, File I/O, and Multithreading are included.</a>
+            </question>
+            <question id="3">
+                <q>Will I learn JDBC and database connectivity?</q>
+                <a>Yes, database connectivity and CRUD operations are explained.</a>
+            </question>
+            <question id="4">
+                <q>Does this course prepare me for frameworks like Spring?</q>
+                <a>Yes, it builds a strong foundation required before moving into Spring and Hibernate.</a>
+            </question>
+            <question id="5">
+                <q>Are practical coding exercises included?</q>
+                <a>Yes, multiple exercises and coding challenges are provided.</a>
+            </question>
+        </faq>
+    </course>
+</courses>

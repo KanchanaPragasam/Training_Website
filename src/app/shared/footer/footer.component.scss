@@ -1,0 +1,48 @@
+@use '../../../assets/styles/main.scss' as *;
+
+.footer-section{
+  padding: 2rem 0rem;
+  
+  background-color: $secondary-color;
+  color: $white-color;
+  line-height: 1.5;
+  text-align: justify;
+
+ .row {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr; 
+    gap: 2rem;  
+  }
+}
+// footer links
+.d-flex a {
+  color: inherit;         
+  text-decoration: none; 
+  i{
+    font-size: large;
+  }
+}
+
+.d-flex a:hover {
+  color: $primary-color;  
+}
+
+@media (max-width: 768px) {
+  .footer-section .row {
+    grid-template-columns: 1fr;  
+    gap: 1rem;
+  }
+  
+
+    // Hide other sections
+    .welcome,
+    .community {
+      display: none;
+    }
+
+    // Make connect section full width
+    .connect {
+      width: 100%;
+    }
+  
+}
