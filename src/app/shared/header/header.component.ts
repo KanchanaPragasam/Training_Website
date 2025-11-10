@@ -29,7 +29,7 @@ export class HeaderComponent {
 
   openWhatsApp(){
     if (isPlatformBrowser(this.platformId)) {
-    window.open('https://wa.me/917904159881?', '_blank');
+    window.open('https://wa.me/914426862365?', '_blank');
     }
   }
 }
