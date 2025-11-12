@@ -12,6 +12,7 @@ import {
   PLATFORM_ID,
 } from '@angular/core';
 import { SeoService } from '../../core/services/seo.service';
+import { HttpClient } from '@angular/common/http';
 
 interface Faq {
   id: string;
@@ -48,49 +49,16 @@ export class FaqComponent implements OnInit, AfterViewInit {
   constructor(
     private xmlReader: XmlReaderService,
     private renderer: Renderer2, @Inject(PLATFORM_ID) private platformId: Object,
-    private seo: SeoService
+    private seo: SeoService,
+    private http: HttpClient
   ) { }
 
   ngOnInit(): void {
-    this.xmlReader
-      .readXml('../../../../assets/data/faq.xml')
-      .subscribe((xml) => {
-        const faqNodes = Array.from(xml?.getElementsByTagName('faq') || []);
-
-        this.faqList = faqNodes.map((faq) => ({
-          id: faq.getAttribute('id') || '',
-          category: faq.getAttribute('category') || 'general',
-          question:
-            faq.getElementsByTagName('question')[0]?.textContent?.trim() || '',
-          answer:
-            faq.getElementsByTagName('answer')[0]?.textContent?.trim() || '',
-          isOpen: false,
-        }));
-
-        // Group FAQs by category
-        this.groupedFaqs = this.faqList.reduce((groups, faq) => {
-          if (!groups[faq.category]) {
-            groups[faq.category] = [];
-          }
-          groups[faq.category].push(faq);
-          return groups;
-        }, {} as { [category: string]: Faq[] });
-
-        // Set categories and default selection
-        this.categories = Object.keys(this.groupedFaqs);
-
-        this.selectedCategory = this.categories.includes('Enrollment')
-          ? 'Enrollment'
-          : this.categories[0];
-
-        // Select first FAQ of selected category by default
-        this.selectedFaqId =
-          this.groupedFaqs[this.selectedCategory]?.[0]?.id || null;
-      });
+    this.loadFaqs();
     this.seo.updateMetaData({
       title: 'FAQs - IT Courses & Internships | Software Training Service Ambattur',
       description:
-        'Find answers to common questions about our IT training courses, enrollments, and internships at Software Training Service, Ambattur. Learn Java, Python, Angular, and more.',
+        'Find answers to common questions about our IT training courses, enrollments, and internships at Your Academy, Ambattur. Learn Java, Python, Angular, and more.',
       image: '/assets/images/logo-croped.webp',
       url: 'https://wp4.inspirationcs.ca/assets/images/logo-croped.webp',
       robots: 'index, follow',
@@ -128,6 +96,31 @@ export class FaqComponent implements OnInit, AfterViewInit {
     });
   }
 
+  loadFaqs(): void {
+    this.http.get<Faq[]>('assets/data/faq.json').subscribe((faqs) => {
+      // Assign FAQ list
+      this.faqList = faqs;
+
+      // Group FAQs by category
+      this.groupedFaqs = this.faqList.reduce((groups, faq) => {
+        if (!groups[faq.category]) {
+          groups[faq.category] = [];
+        }
+        groups[faq.category].push(faq);
+        return groups;
+      }, {} as { [category: string]: Faq[] });
+
+      // Set categories and default selection
+      this.categories = Object.keys(this.groupedFaqs);
+      this.selectedCategory = this.categories.includes('Enrollment')
+        ? 'Enrollment'
+        : this.categories[0];
+
+      // Select first FAQ of selected category by default
+      this.selectedFaqId =
+        this.groupedFaqs[this.selectedCategory]?.[0]?.id || null;
+    });
+  }
   selectCategory(category: string): void {
     if (this.selectedCategory !== category) {
       this.selectedCategory = category;

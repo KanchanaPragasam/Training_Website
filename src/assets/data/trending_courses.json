@@ -1,0 +1,1739 @@
+[
+  {
+    "slug": "full-stack-development",
+    "courseTitle": "Full Stack Development",
+    "courseCategory": "Web Development",
+    "courseDescription": [
+      "Master both frontend and backend development",
+      "Hands-on projects with Angular and Spring Boot",
+      "Database integration and REST APIs"
+    ],
+    "courseDuration": "6 Months",
+    "courseStudents": 1500,
+    "overview": "This course is designed to provide complete end-to-end training in Full Stack Development, covering everything from the front-end user interface to the back-end server and database management. You will learn to design, develop, test, and deploy robust and scalable web applications using industry-standard technologies. By the end of this course, you will be able to create full-fledged applications independently and be job-ready for Full Stack Developer roles.",
+    "whoShouldEnroll": [
+      "Beginners who want to start a career in web development",
+      "Front-end developers looking to learn back-end development",
+      "Back-end developers seeking front-end expertise",
+      "Students, IT professionals, and career changers aiming for Full Stack roles"
+    ],
+    "courseHighlights": [
+      "Frontend with Angular",
+      "Backend with Spring Boot",
+      "Database integration and deployment"
+    ],
+    "syllabus": {
+      "sections": 6,
+      "lessons": 18,
+      "sectionsList": [
+        {
+          "id": 1,
+          "title": "Front-End Development (Angular and TypeScript)",
+          "lessons": [
+            "Angular Basics and Project Setup",
+            "Data Binding and Forms",
+            "Routing and Observables"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Back-End Development (Spring Boot)",
+          "lessons": [
+            "Spring Boot Setup and REST APIs",
+            "CRUD with JPA and Hibernate",
+            "Authentication and Security"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Database Management (SQL and NoSQL)",
+          "lessons": [
+            "SQL Queries and Joins",
+            "Stored Procedures and Indexing",
+            "NoSQL with MongoDB"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Full Stack Integration",
+          "lessons": [
+            "Angular + Spring Boot Integration",
+            "Validation and Error Handling",
+            "Testing and Debugging"
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Deployment and DevOps Basics",
+          "lessons": [
+            "Cloud Deployment (AWS/Heroku)",
+            "CI/CD Pipelines",
+            "Monitoring and Optimization"
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Capstone Project",
+          "lessons": [
+            "Real-world Full Stack App",
+            "User Authentication and Roles",
+            "Final Deployment and Portfolio"
+          ]
+        }
+      ]
+    },
+    "toolsCovered": [
+      "Angular",
+      "TypeScript",
+      "HTML5",
+      "CSS3",
+      "JavaScript",
+      "Spring Boot",
+      "REST APIs",
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Git and GitHub",
+      "Maven",
+      "Postman",
+      "Jenkins",
+      "AWS / Heroku"
+    ],
+    "careerScope": [
+      "Fullstack developer",
+      "Angular developer",
+      "Springboot developer",
+      "Web application developer",
+      "Front-end / Back-end engineer",
+      "Cloud deployment engineer"
+    ],
+    "faq": [
+      {
+        "id": 1,
+        "question": "What are the prerequisites for this course?",
+        "answer": "Basic knowledge of programming and databases is recommended, but not mandatory.",
+        "isOpen": false
+      },
+      {
+        "id": 2,
+        "question": "Which databases are covered?",
+        "answer": "The course covers MySQL, PostgreSQL, and MongoDB with practical projects.",
+        "isOpen": false
+      },
+      {
+        "id": 3,
+        "question": "Will I get hands-on projects in both frontend and backend?",
+        "answer": "Yes, you will work on real projects using Angular for frontend and Spring Boot for backend.",
+        "isOpen": false
+      },
+      {
+        "id": 4,
+        "question": "Do I need prior experience in web development?",
+        "answer": "No, the course starts from basics and progresses to advanced full-stack concepts.",
+        "isOpen": false
+      },
+      {
+        "id": 5,
+        "question": "Are deployment platforms like AWS/Heroku covered?",
+        "answer": "Yes, you will learn deployment on platforms like AWS and Heroku.",
+        "isOpen": false
+      }
+    ],
+    "image": "fullstack-development2.png",
+    "video": "full-stack-bg.webm"
+  },
+  {
+    "slug": "selenium-testing",
+    "courseTitle": "Selenium Testing",
+    "courseCategory": "Software Testing",
+    "courseDescription": [
+      "Automate web applications",
+      "Learn Selenium WebDriver",
+      "Framework development with Java"
+    ],
+    "courseDuration": "3 Months",
+    "courseStudents": 800,
+    "overview": "Automation testing is a critical skill in today’s software industry. This course introduces you to Selenium WebDriver, one of the most widely used tools for web automation. You’ll learn how to automate web applications across browsers, create reusable testing frameworks, and integrate your automation scripts with CI/CD pipelines like Jenkins. With hands-on exercises, you’ll build test cases for real-world projects and understand how to debug and maintain large test suites. The course emphasizes practical implementation, ensuring that by completion, you’ll be able to confidently work as a QA automation tester or test engineer.",
+    "whoShouldEnroll": [
+      "Beginners in software testing or QA who want to learn automation",
+      "Manual testers aiming to transition to automation testing",
+      "Developers looking to understand automated testing workflows",
+      "IT professionals aspiring to become QA Automation Engineers"
+    ],
+    "courseHighlights": [
+      "WebDriver and TestNG",
+      "Framework building",
+      "CI/CD integration"
+    ],
+    "syllabus": {
+      "sections": 7,
+      "lessons": 21,
+      "sectionsList": [
+        {
+          "id": 1,
+          "title": "Introduction to Software Testing",
+          "lessons": [
+            "Basics: Manual vs Automated Testing",
+            "Types of Testing",
+            "Test Life Cycle and Test Case Design"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Selenium Overview",
+          "lessons": [
+            "Selenium Components",
+            "Setup and Architecture",
+            "Working Mechanism"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Selenium WebDriver",
+          "lessons": [
+            "Locators and Web Elements",
+            "Actions and Events",
+            "Synchronization and Handling Alerts/Frames"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Test Automation Frameworks",
+          "lessons": [
+            "TestNG and JUnit Basics",
+            "Writing Test Cases and Assertions",
+            "Data-driven and Hybrid Frameworks"
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Advanced Selenium Features",
+          "lessons": [
+            "Dynamic Elements and AJAX Handling",
+            "Reports and Screenshots",
+            "Parallel Execution and Integration"
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Continuous Integration (CI/CD)",
+          "lessons": [
+            "Jenkins Pipelines",
+            "Scheduling and Version Control",
+            "Notifications and Reporting"
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Real-Time Projects",
+          "lessons": [
+            "E-commerce Automation",
+            "Banking App Automation",
+            "Regression Test Suite and Reports"
+          ]
+        }
+      ]
+    },
+    "toolsCovered": [
+      "Selenium WebDriver",
+      "Selenium IDE",
+      "Selenium Grid",
+      "Java",
+      "TestNG",
+      "JUnit",
+      "Maven",
+      "Jenkins",
+      "Git and GitHub",
+      "Eclipse / IntelliJ IDEA",
+      "Browser Developer Tools"
+    ],
+    "careerScope": [
+      "QA automation engineer",
+      "Software test engineer (Automation)",
+      "SDET (Software development engineer in test)",
+      "Manual tester transitioning to automation",
+      "Test lead / QA lead",
+      "DevOps engineer (with testing focus)",
+      "Junior QA / fresher in testing"
+    ],
+    "faq": [
+      {
+        "id": 1,
+        "question": "Do I need prior programming knowledge?",
+        "answer": "Basic Java knowledge helps, but the course covers necessary Java concepts.",
+        "isOpen": false
+      },
+      {
+        "id": 2,
+        "question": "Which testing frameworks are covered?",
+        "answer": "TestNG, JUnit, and Cucumber BDD are included.",
+        "isOpen": false
+      },
+      {
+        "id": 3,
+        "question": "Will I learn automation for web applications only?",
+        "answer": "No, you will also learn API automation and basics of mobile testing with Appium.",
+        "isOpen": false
+      },
+      {
+        "id": 4,
+        "question": "Is CI/CD integration covered?",
+        "answer": "Yes, Selenium automation will be integrated with Jenkins and GitHub workflows.",
+        "isOpen": false
+      },
+      {
+        "id": 5,
+        "question": "Does the course include real-time projects?",
+        "answer": "Yes, industry-like automation projects are part of the curriculum.",
+        "isOpen": false
+      }
+    ],
+    "image": "selenium2.png",
+    "video": "selenium-testing-bg.webm"
+  },
+  {
+    "id": 3,
+    "slug": "core-java",
+    "courseName": "Core Java",
+    "image": "java2.png",
+    "video": "java-core-bg.webm",
+    "courseCategory": "Programming",
+    "courseTitle": "Core Java",
+    "courseDescription": [
+      "Master Java basics and OOP",
+      "Practice with real examples",
+      "Foundation for advanced Java frameworks"
+    ],
+    "courseDuration": "2 Months",
+    "courseStudents": 2500,
+    "overview": "Java remains one of the most versatile and widely used programming languages. This course builds a strong foundation in Java syntax, object-oriented programming, exception handling, data structures, and multithreading. You’ll practice concepts using hands-on coding challenges and mini-projects in popular IDEs like Eclipse and IntelliJ. By learning Java, you not only prepare yourself for advanced frameworks like Spring and Hibernate but also gain skills essential for backend development, enterprise systems, and Android development. It’s the perfect starting point for anyone aiming for a long-term career in software engineering.",
+    "whoShouldEnroll": [
+      "Beginners aiming to become professional Java developers",
+      "Programmers looking to strengthen Java fundamentals",
+      "Students and IT professionals preparing for Java-based roles",
+      "Anyone aiming for careers in backend, enterprise, or web development"
+    ],
+    "courseHighlights": [
+      "Object-Oriented Programming",
+      "Hands-on with Eclipse/IntelliJ",
+      "Mini projects included"
+    ],
+    "syllabus": {
+      "sections": 8,
+      "lessons": 24,
+      "sectionsList": [
+        {
+          "id": 1,
+          "title": "Java Basics",
+          "lessons": [
+            "Introduction to Java and JVM Architecture",
+            "Installing JDK and IDE Setup",
+            "Data Types, Variables, Operators, and Control Statements"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "OOP in Java",
+          "lessons": [
+            "Classes and Objects",
+            "Methods and Constructors",
+            "Inheritance, Polymorphism, Encapsulation, Abstraction"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Exception Handling and Debugging",
+          "lessons": [
+            "Types of Exceptions: Checked vs Unchecked",
+            "Try-Catch, Finally, Throw, and Throws",
+            "Creating Custom Exceptions and Debugging Techniques"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Collections and Generics",
+          "lessons": [
+            "Collections Framework: List, Set, Map, Queue",
+            "Iterators and Enhanced For Loop",
+            "Generics, Sorting and Searching"
+          ]
+        },
+        {
+          "id": 5,
+          "title": "File Handling and I/O",
+          "lessons": [
+            "File Class, FileReader, FileWriter",
+            "BufferedReader and BufferedWriter",
+            "Object Serialization and Deserialization"
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Multithreading and Concurrency",
+          "lessons": [
+            "Introduction to Threads and Runnable Interface",
+            "Thread Lifecycle, Priority and Synchronization",
+            "Concurrency Utilities and Real-world Use Cases"
+          ]
+        },
+        {
+          "id": 7,
+          "title": "JDBC and Database Connectivity",
+          "lessons": [
+            "Introduction to JDBC and Drivers",
+            "Connecting Java with MySQL/PostgreSQL",
+            "Executing SQL Queries, Prepared Statements and Transactions"
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Real-Time Projects",
+          "lessons": [
+            "Banking System: Account Management and Transactions",
+            "Library Management System: Book Inventory and Borrowing",
+            "Student Management System: CRUD Operations"
+          ]
+        }
+      ]
+    },
+    "toolsCovered": [
+      "Java SE",
+      "Eclipse / IntelliJ IDEA",
+      "JDK",
+      "JDBC",
+      "Git and GitHub"
+    ],
+    "careerScope": [
+      "Java-developer",
+      "Software-developer",
+      "Backend-developer",
+      "Full-stack-developer",
+      "Automation-test-engineer",
+      "Application-developer"
+    ],
+    "faq": [
+      {
+        "id": 1,
+        "question": "Is this course beginner-friendly?",
+        "answer": "Yes, it starts from scratch and covers up to advanced Java concepts."
+      },
+      {
+        "id": 2,
+        "question": "Which key topics are covered?",
+        "answer": "OOP, Collections, Exception Handling, File I/O, and Multithreading are included."
+      },
+      {
+        "id": 3,
+        "question": "Will I learn JDBC and database connectivity?",
+        "answer": "Yes, database connectivity and CRUD operations are explained."
+      },
+      {
+        "id": 4,
+        "question": "Does this course prepare me for frameworks like Spring?",
+        "answer": "Yes, it builds a strong foundation required before moving into Spring and Hibernate."
+      },
+      {
+        "id": 5,
+        "question": "Are practical coding exercises included?",
+        "answer": "Yes, multiple exercises and coding challenges are provided."
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "slug": "python-programming",
+    "courseName": "Python Programming",
+    "image": "python2.png",
+    "video": "Python-Bg.webm",
+    "courseCategory": "Programming",
+    "courseTitle": "Python",
+    "courseDescription": [
+      "Beginner to advanced Python",
+      "Hands-on scripting and projects",
+      "Used in data science, automation, and more"
+    ],
+    "courseDuration": "2 Months",
+    "courseStudents": 3000,
+    "overview": "Python is one of the most beginner-friendly yet powerful programming languages, widely used in data science, machine learning, automation, and web development. This course takes you from basic syntax and control structures to advanced topics like OOP, modules, and file handling. You’ll apply your knowledge in scripting tasks, automation projects, and problem-solving exercises. With an emphasis on real-world applications, you’ll also explore how Python connects to databases, APIs, and data processing workflows. By the end, you’ll have both the confidence and the skills to pursue careers in Python development, automation, or data analysis.",
+    "whoShouldEnroll": [
+      "Beginners with no prior programming experience",
+      "Programmers seeking to learn a high-demand language",
+      "Students, IT professionals, and data enthusiasts",
+      "Anyone aiming for careers in Python development, automation, or data science"
+    ],
+    "courseHighlights": [
+      "Projects and use cases",
+      "Foundation for AI/ML",
+      "Real-world scripting"
+    ],
+    "syllabus": {
+      "sections": 7,
+      "lessons": 21,
+      "sectionsList": [
+        {
+          "id": 1,
+          "title": "Python Basics",
+          "lessons": [
+            "Introduction to Python and Installation",
+            "Python IDEs: PyCharm, VS Code, Jupyter Notebook",
+            "Data Types, Variables, Operators and Expressions"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Control Structures",
+          "lessons": [
+            "If, Else, Elif Statements",
+            "Loops: for, while",
+            "Functions: Defining, Arguments and Return Values"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Modules and Packages",
+          "lessons": [
+            "Modules and Packages",
+            "Python Standard Library Overview",
+            "Lambda Functions"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "OOP in Python",
+          "lessons": [
+            "Classes and Objects",
+            "Attributes and Methods",
+            "Inheritance, Encapsulation, Polymorphism"
+          ]
+        },
+        {
+          "id": 5,
+          "title": "File and Exception Handling",
+          "lessons": [
+            "Reading/Writing Text and Binary Files",
+            "Working with CSV, JSON and XML",
+            "Exception Handling: try, except, finally, raise"
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Python Libraries and Automation",
+          "lessons": [
+            "Requests, BeautifulSoup, Selenium",
+            "Automating Web Tasks and Data",
+            "Excel, PDF, CSV Automation and Scheduling Tasks"
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Data Analysis and Projects",
+          "lessons": [
+            "NumPy and Pandas for Data Analysis",
+            "Data Visualization with Matplotlib and Seaborn",
+            "Mini Projects: Web Automation, Data Scripts, Python Apps"
+          ]
+        }
+      ]
+    },
+    "toolsCovered": [
+      "Python",
+      "PyCharm",
+      "VS Code",
+      "Jupyter Notebook",
+      "Selenium",
+      "Pandas",
+      "NumPy",
+      "Matplotlib",
+      "CSV Handling",
+      "JSON Handling",
+      "XML Handling",
+      "requests",
+      "BeautifulSoup",
+      "Git and GitHub"
+    ],
+    "careerScope": [
+      "Python-developer",
+      "Automation-tester",
+      "Data-analyst",
+      "Data-scientist",
+      "Backend-developer",
+      "Python-automation-engineer"
+    ],
+    "faq": [
+      {
+        "id": 1,
+        "question": "Is prior programming knowledge required?",
+        "answer": "No, the course starts from basics and is beginner-friendly."
+      },
+      {
+        "id": 2,
+        "question": "Which areas of Python are covered?",
+        "answer": "Core Python, OOP, file handling, libraries (NumPy, Pandas), and frameworks (Flask/Django)."
+      },
+      {
+        "id": 3,
+        "question": "Will I learn Python for data science?",
+        "answer": "Yes, basics of data science, visualization, and ML with Python are included."
+      },
+      {
+        "id": 4,
+        "question": "Are real projects part of this course?",
+        "answer": "Yes, web apps, automation scripts, and data analysis projects are included."
+      },
+      {
+        "id": 5,
+        "question": "Does the course cover Python for automation?",
+        "answer": "Yes, you will learn automation using Python scripts for daily tasks."
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "slug": "perl-scripting",
+    "courseName": "Perl Scripting",
+    "image": "perl2.png",
+    "video": "perl-scripting-bg.webm",
+    "courseCategory": "Scripting",
+    "courseTitle": "Perl Scripting",
+    "courseDescription": [
+      "Master scripting with Perl",
+      "Ideal for system and network automation",
+      "Strong regular expression support"
+    ],
+    "courseDuration": "1.5 Months",
+    "courseStudents": 400,
+    "overview": "Perl is a powerful scripting language known for its text-processing capabilities and extensive use in system administration. This course introduces you to Perl fundamentals, regular expressions, file handling, and automation scripting. You’ll learn how to build scripts that automate repetitive tasks, process logs, and manage system configurations. With practical exercises, you’ll gain hands-on experience in using Perl for system administration, reporting, and network-related tasks. By completion, you’ll have the ability to create robust automation scripts and apply Perl in IT infrastructure management.",
+    "whoShouldEnroll": [
+      "Beginners looking to learn scripting and automation",
+      "System administrators and IT professionals",
+      "Developers wanting to automate repetitive tasks",
+      "Anyone aiming to build expertise in Perl for enterprise applications"
+    ],
+    "courseHighlights": [
+      "Text processing and regex",
+      "File and network scripting"
+    ],
+    "syllabus": {
+      "sections": 7,
+      "lessons": 21,
+      "sectionsList": [
+        {
+          "id": 1,
+          "title": "Perl Basics",
+          "lessons": [
+            "Introduction to Perl",
+            "Variables, Scalars, Arrays, Hashes",
+            "Control Structures: if, unless, loops"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Subroutines and Modular Programming",
+          "lessons": [
+            "Creating and Calling Subroutines",
+            "Passing Arguments and Returning Values",
+            "Packages and Namespaces"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Regular Expressions and Text Processing",
+          "lessons": [
+            "Pattern Matching and Substitution",
+            "Working with Text Files",
+            "Parsing Logs and Reports"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "File and Directory Handling",
+          "lessons": [
+            "Reading and Writing Files",
+            "File System Operations",
+            "Automating File-Based Tasks"
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Database Connectivity (DBI)",
+          "lessons": [
+            "Connecting Perl with MySQL / PostgreSQL",
+            "Executing Queries and Transactions",
+            "Handling Results and Error Management"
+          ]
+        },
+        {
+          "id": 6,
+          "title": "System and Web Automation",
+          "lessons": [
+            "Automating System Tasks and Cron Jobs",
+            "Web Scraping Basics with Perl",
+            "Sending Emails and Automating Reports"
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Real-Time Projects",
+          "lessons": [
+            "Log File Analysis and Reporting",
+            "Web Automation Scripts",
+            "Database and File Automation Projects"
+          ]
+        }
+      ]
+    },
+    "toolsCovered": [
+      "Perl",
+      "CPAN Modules",
+      "DBI (Database Connectivity)",
+      "Linux/Windows Command Line",
+      "Regular Expressions",
+      "File Handling and System Operations",
+      "Cron Jobs and Automation Scripts"
+    ],
+    "careerScope": [
+      "Perl-developer",
+      "Automation-developer",
+      "System-administrator",
+      "Database-scripter",
+      "Web-scraping-specialist",
+      "Backend-scripter"
+    ],
+    "faq": [
+      {
+        "id": 1,
+        "question": "Is Linux knowledge required?",
+        "answer": "Basic Linux/Unix knowledge is recommended."
+      },
+      {
+        "id": 2,
+        "question": "What are the key topics covered?",
+        "answer": "Regex, file handling, DB connectivity, and system administration scripts."
+      },
+      {
+        "id": 3,
+        "question": "Is Perl used in automation?",
+        "answer": "Yes, Perl is widely used in automation and DevOps environments."
+      },
+      {
+        "id": 4,
+        "question": "Does the course cover CPAN modules?",
+        "answer": "Yes, you will learn about CPAN and its popular modules."
+      },
+      {
+        "id": 5,
+        "question": "Will I learn Perl for web development?",
+        "answer": "Yes, CGI and web scripting with Perl are included."
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "slug": "pmp-certification",
+    "courseName": "PMP Certification",
+    "image": "pmp2.png",
+    "video": "PMP-Bg.webm",
+    "courseCategory": "Project Management",
+    "courseTitle": "PMP Certification Training",
+    "courseDescription": [
+      "PMBOK-aligned training",
+      "Practice exams and case studies",
+      "Led by certified instructors"
+    ],
+    "courseDuration": "2 Months",
+    "courseStudents": 600,
+    "overview": "Project Management Professional (PMP) certification is one of the most recognized credentials worldwide. This course aligns with the PMBOK framework, providing in-depth knowledge of project initiation, planning, execution, monitoring, and closure. You’ll practice with mock tests, real-world case studies, and project simulations. Delivered by certified instructors, the course prepares you for the PMP exam and helps you master leadership, risk management, and team coordination. It’s ideal for professionals aiming to advance their careers in project management.",
+    "whoShouldEnroll": [
+      "Aspiring project managers seeking PMP certification",
+      "Experienced professionals looking to formalize project management skills",
+      "Team leads, program managers, and project coordinators",
+      "Anyone aiming to enhance their career in project management"
+    ],
+    "courseHighlights": [
+      "Complete exam prep",
+      "Interactive case studies"
+    ],
+    "syllabus": {
+      "sections": 6,
+      "lessons": 30,
+      "sectionsList": [
+        {
+          "id": 1,
+          "title": "Introduction to PMP and Project Management",
+          "lessons": [
+            "Overview of Project Management",
+            "PMI and PMBOK Guide Framework",
+            "Project Life Cycle and Phases",
+            "Roles and Responsibilities of a Project Manager"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Project Management Process Groups",
+          "lessons": [
+            "Initiating: Project Charter, Stakeholder Identification",
+            "Planning: Scope, Schedule, Cost, Quality, Resources, Risk, Procurement Plans",
+            "Executing: Team Leadership, Communication, Stakeholder Engagement",
+            "Monitoring and Controlling: KPIs, EVM, Risk Tracking",
+            "Closing: Project Closure and Lessons Learned"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Knowledge Areas in PMP",
+          "lessons": [
+            "Integration Management",
+            "Scope and Schedule Management",
+            "Cost and Quality Management",
+            "Resource and Communication Management",
+            "Risk, Procurement and Stakeholder Management"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Tools and Techniques",
+          "lessons": [
+            "Work Breakdown Structure (WBS)",
+            "Gantt Charts, PERT and CPM",
+            "Risk Assessment Matrices",
+            "Project Management Software (MS Project, Jira, Trello)",
+            "Earned Value Management (EVM)",
+            "Agile and Hybrid Techniques"
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Exam Preparation and Mock Tests",
+          "lessons": [
+            "PMP Exam Structure and Domains",
+            "Question Types and Exam Tips",
+            "Mock Tests and Sample Questions",
+            "Time Management Strategies",
+            "Review of Key Concepts"
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Real-World Application",
+          "lessons": [
+            "Case Studies from IT, Construction, and Operations",
+            "Simulation Exercises: Planning, Risk, Resource Allocation",
+            "Stakeholder Communication and Conflict Resolution",
+            "Applying PMP in Agile and Hybrid Projects"
+          ]
+        }
+      ]
+    },
+    "toolsCovered": [
+      "PMBOK Guide",
+      "MS Project",
+      "Jira",
+      "Trello",
+      "Gantt Charts",
+      "Risk Management Tools",
+      "Resource Management Tools",
+      "Communication and Collaboration Tools"
+    ],
+    "careerScope": [
+      "Project-manager",
+      "Program-manager",
+      "Project-coordinator",
+      "Parallelmo-analyst",
+      "Consultant",
+      "Senior-management"
+    ],
+    "faq": [
+      {
+        "id": 1,
+        "question": "Is prior project management experience required?",
+        "answer": "Yes, PMI recommends project management experience for certification eligibility."
+      },
+      {
+        "id": 2,
+        "question": "What is the exam format?",
+        "answer": "The PMP exam consists of 180 questions covering People, Process, and Business Environment."
+      },
+      {
+        "id": 3,
+        "question": "Will this course prepare me for the PMP exam?",
+        "answer": "Yes, the course aligns with the PMBOK Guide and exam content outline."
+      },
+      {
+        "id": 4,
+        "question": "Are mock tests included?",
+        "answer": "Yes, full-length mock exams and quizzes are part of the training."
+      },
+      {
+        "id": 5,
+        "question": "Is the training PMI-authorized?",
+        "answer": "Yes, the course fulfills the 35 contact hours required by PMI."
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "slug": "pl-sql",
+    "courseName": "Pl/SQL",
+    "image": "sql2.png",
+    "video": "pl-sql-Bg.webm",
+    "courseCategory": "Database",
+    "courseTitle": "PL/SQL",
+    "courseDescription": [
+      "Understand stored procedures",
+      "Work with triggers and cursors",
+      "Advanced querying with PL/SQL"
+    ],
+    "courseDuration": "1.5 Months",
+    "courseStudents": 1000,
+    "overview": "This course is designed to make you proficient in writing procedural code for Oracle databases. You’ll learn how to create stored procedures, functions, triggers, and packages while mastering advanced SQL concepts. Real-world case studies will help you understand how PL/SQL enhances performance, secures data operations, and simplifies complex business logic. You’ll work on exercises involving database triggers, error handling, and cursor management, preparing you for careers as a database developer, Oracle DBA, or backend engineer.",
+    "whoShouldEnroll": [
+      "Beginners in database development or SQL",
+      "Developers aiming to enhance database programming skills",
+      "Database administrators (DBAs) and IT professionals",
+      "Anyone aspiring to work in Oracle database development or backend roles"
+    ],
+    "courseHighlights": [
+      "Stored procedures and triggers",
+      "Oracle SQL practice"
+    ],
+    "syllabus": {
+      "sections": 8,
+      "lessons": 24,
+      "sectionsList": [
+        {
+          "id": 1,
+          "title": "Introduction to PL/SQL and SQL Basics",
+          "lessons": [
+            "Overview of Oracle Database and PL/SQL",
+            "SQL Review: SELECT, INSERT, UPDATE, DELETE",
+            "Data Types, Variables, and Constants"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "PL/SQL Block Structure",
+          "lessons": [
+            "Anatomy of a PL/SQL Block",
+            "Writing Anonymous PL/SQL Blocks",
+            "Execution Flow and Best Practices"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Procedures and Functions",
+          "lessons": [
+            "Creating and Calling Stored Procedures",
+            "Creating and Using Functions",
+            "Parameter Modes: IN, OUT, IN OUT"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Cursors and Loops",
+          "lessons": [
+            "Implicit and Explicit Cursors",
+            "Cursor Attributes and Usage",
+            "Loops: FOR, WHILE, Nested Loops"
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Packages and Modular Programming",
+          "lessons": [
+            "PL/SQL Packages Overview",
+            "Creating Package Specification and Body",
+            "Using Package Variables, Procedures, Functions"
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Triggers",
+          "lessons": [
+            "Introduction to Triggers",
+            "Row-Level and Statement-Level Triggers",
+            "Practical Use Cases"
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Exception Handling and Error Management",
+          "lessons": [
+            "Predefined and User-Defined Exceptions",
+            "Handling Exceptions in PL/SQL Blocks",
+            "Debugging Techniques and Best Practices"
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Real-Time Projects",
+          "lessons": [
+            "Employee Management System CRUD",
+            "Sales and Inventory Automation",
+            "Payroll Processing and Mini Projects"
+          ]
+        }
+      ]
+    },
+    "toolsCovered": [
+      "Oracle Database",
+      "Oracle SQL Developer",
+      "SQL*Plus"
+    ],
+    "careerScope": [
+      "Plsql-developer",
+      "Database-developer",
+      "Backend-developer",
+      "Oracle-database-administrator",
+      "Data-analyst",
+      "Sql-developer"
+    ],
+    "faq": [
+      {
+        "id": 1,
+        "question": "Do I need SQL knowledge before starting?",
+        "answer": "Yes, basic SQL knowledge is recommended for better understanding."
+      },
+      {
+        "id": 2,
+        "question": "Which topics are covered?",
+        "answer": "Stored procedures, triggers, cursors, packages, and exception handling."
+      },
+      {
+        "id": 3,
+        "question": "Will I practice with real databases?",
+        "answer": "Yes, Oracle Database is used for practical sessions."
+      },
+      {
+        "id": 4,
+        "question": "Does the course include performance tuning?",
+        "answer": "Yes, optimization techniques and best practices are covered."
+      },
+      {
+        "id": 5,
+        "question": "Is PL/SQL still in demand?",
+        "answer": "Yes, PL/SQL is widely used in enterprise applications for database management."
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "slug": "ai-ml",
+    "courseName": "AI/ML",
+    "image": "ai2.png",
+    "video": "ai-ml-bg.webm",
+    "courseCategory": "Artificial Intelligence",
+    "courseTitle": "AI/ML",
+    "courseDescription": [
+      "Machine Learning and AI Fundamentals",
+      "Work with Python and ML libraries",
+      "Project-based learning"
+    ],
+    "courseDuration": "4 Months",
+    "courseStudents": 1200,
+    "overview": "This course provides a comprehensive foundation in Artificial Intelligence and Machine Learning, designed for beginners and professionals aiming to build intelligent applications. It starts with the fundamentals of Python (the industry-standard language for AI/ML), progresses into data handling, statistics, and mathematics for AI, and then covers core machine learning algorithms, deep learning, natural language processing (NLP), and computer vision. Learners will gain hands-on experience with popular AI/ML libraries and frameworks while working on real-world projects, such as predictive analytics, image recognition, and natural language applications.",
+    "whoShouldEnroll": [
+      "Beginners interested in AI, ML, and data-driven technologies",
+      "Programmers and IT professionals looking to specialize in AI/ML",
+      "Students aiming for careers in data science, analytics, or AI research",
+      "Anyone aspiring to build intelligent applications or predictive models"
+    ],
+    "courseHighlights": [
+      "End-to-end AI projects",
+      "Python-based ML"
+    ],
+    "syllabus": {
+      "sections": 6,
+      "lessons": 18,
+      "sectionsList": [
+        {
+          "id": 1,
+          "title": "Introduction to AI and ML",
+          "lessons": [
+            "Overview of Artificial Intelligence",
+            "Types of Machine Learning: Supervised, Unsupervised, Reinforcement",
+            "Real-World Applications of AI"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Python for ML",
+          "lessons": [
+            "Python Basics for Data Science",
+            "NumPy and Pandas for Data Handling",
+            "Data Visualization with Matplotlib and Seaborn"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Supervised and Unsupervised Learning",
+          "lessons": [
+            "Linear and Logistic Regression",
+            "Decision Trees, Random Forests, and SVM",
+            "K-Means Clustering and Dimensionality Reduction"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Neural Networks and Deep Learning",
+          "lessons": [
+            "Introduction to Neural Networks",
+            "Deep Learning with TensorFlow and Keras",
+            "Convolutional Neural Networks (CNNs)"
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Natural Language Processing (NLP)",
+          "lessons": [
+            "Text Preprocessing and Tokenization",
+            "Sentiment Analysis and Text Classification",
+            "Transformers and Pre-trained Models"
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Projects and Deployment",
+          "lessons": [
+            "End-to-End ML Project",
+            "Model Deployment with Flask/Streamlit",
+            "AI in Cloud Platforms"
+          ]
+        }
+      ]
+    },
+    "toolsCovered": [
+      "Python",
+      "NumPy",
+      "Pandas",
+      "Matplotlib",
+      "Seaborn",
+      "Scikit-learn",
+      "TensorFlow",
+      "Keras",
+      "PyTorch",
+      "NLTK",
+      "OpenAI Transformers",
+      "Jupyter Notebook",
+      "Flask / Streamlit",
+      "Git and GitHub",
+      "AWS / Google Cloud"
+    ],
+    "careerScope": [
+      "AI engineer",
+      "Machine learning engineer",
+      "Data scientist",
+      "Deep learning engineer",
+      "NLP engineer",
+      "Computer vision engineer",
+      "Business intelligence analyst",
+      "Research scientist (AI/ML)"
+    ],
+    "faq": [
+      {
+        "id": 1,
+        "question": "Do I need math knowledge for this course?",
+        "answer": "Basic linear algebra, statistics, and probability are helpful but explained in the course."
+      },
+      {
+        "id": 2,
+        "question": "Which libraries will I learn?",
+        "answer": "You will learn TensorFlow, Keras, Scikit-learn, and PyTorch basics."
+      },
+      {
+        "id": 3,
+        "question": "Are real datasets used?",
+        "answer": "Yes, hands-on projects with real-world datasets are included."
+      },
+      {
+        "id": 4,
+        "question": "Will I learn both AI and ML?",
+        "answer": "Yes, AI concepts like NLP and ML algorithms like regression, classification, clustering are covered."
+      },
+      {
+        "id": 5,
+        "question": "Does the course include deployment?",
+        "answer": "Yes, you will learn model deployment using Flask/Django and cloud platforms."
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "slug": "scrum-certification",
+    "courseName": "Scrum Certification",
+    "image": "scrum2.png",
+    "video": "Scrum-bg.webm",
+    "courseCategory": "Agile",
+    "courseTitle": "Scrum Certification Training",
+    "courseDescription": [
+      "Agile values and Scrum framework",
+      "Learn Scrum roles and ceremonies",
+      "Prepare for Scrum Master certification"
+    ],
+    "courseDuration": "1 Month",
+    "courseStudents": 700,
+    "overview": "This Scrum Certification course provides a comprehensive understanding of Agile principles and the Scrum framework. It covers Scrum roles, events, artifacts, advanced practices, and real-world applications, preparing learners for industry-recognized certifications like CSM (Certified Scrum Master) or PSM (Professional Scrum Master). The course emphasizes hands-on learning through case studies, simulations, and real-time project exercises, enabling participants to effectively manage agile projects, facilitate team collaboration, and deliver high-quality products.",
+    "whoShouldEnroll": [
+      "Aspiring Scrum Masters and Agile Practitioners",
+      "Project Managers transitioning to Agile methodologies",
+      "Developers, QA Engineers, and Team Leads in Agile environments",
+      "Professionals aiming to enhance their career with Scrum certification"
+    ],
+    "courseHighlights": [
+      "Scrum Guide explained",
+      "Agile simulations"
+    ],
+    "syllabus": {
+      "sections": 7,
+      "lessons": 35,
+      "sectionsList": [
+        {
+          "id": 1,
+          "title": "Introduction to Scrum and Agile",
+          "lessons": [
+            "Overview of Agile Methodology",
+            "Agile Manifesto and Principles",
+            "Benefits of Agile and Scrum in Project Management",
+            "Scrum Framework: Roles, Events, Artifacts"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Scrum Roles",
+          "lessons": [
+            "Scrum Master: Responsibilities, Servant Leadership",
+            "Product Owner: Backlog Management, Stakeholder Communication",
+            "Development Team: Cross-functional Responsibilities",
+            "Collaboration and Team Dynamics in Scrum"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Scrum Events",
+          "lessons": [
+            "Sprint Planning: Defining Goals and Tasks",
+            "Daily Stand-Up / Daily Scrum Meetings",
+            "Sprint Review: Demonstrating Deliverables",
+            "Sprint Retrospective: Continuous Improvement",
+            "Backlog Refinement and Grooming"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Scrum Artifacts",
+          "lessons": [
+            "Product Backlog and User Stories",
+            "Sprint Backlog and Task Breakdown",
+            "Definition of Done (DoD)",
+            "Increment and Shippable Product",
+            "Burndown Charts and Progress Tracking"
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Advanced Scrum Practices",
+          "lessons": [
+            "Scaling Scrum for Large Projects (SAFe, LeSS)",
+            "Agile Metrics and Reporting (Velocity, Burn-up Charts)",
+            "Risk Management and Adaptation in Scrum",
+            "Tools for Scrum: Jira, Trello, Asana, Rally",
+            "Integrating Scrum with DevOps"
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Real-Time Projects and Case Studies",
+          "lessons": [
+            "Implementing Scrum in a Software Development Project",
+            "Managing Product Backlogs and Sprint Planning in Real-Time",
+            "Conducting Retrospectives and Continuous Improvement Cycles",
+            "Simulation Exercises for Scrum Master and Product Owner Roles"
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Scrum Certification Preparation",
+          "lessons": [
+            "Scrum Exam Overview and Question Types",
+            "Sample Questions and Full-Length Mock Tests",
+            "Tips and Best Practices for Exam Success",
+            "Review of Scrum Principles and Case Studies"
+          ]
+        }
+      ]
+    },
+    "toolsCovered": [
+      "Jira",
+      "Trello",
+      "Asana",
+      "Rally",
+      "Burndown Charts",
+      "Burn-up Charts",
+      "Agile Metrics Tools",
+      "Collaboration Tools"
+    ],
+    "careerScope": [
+      "Certified-scrum-master",
+      "Agile-project-manager",
+      "Product-owner",
+      "Scrum-team-member",
+      "Agile-practitioner",
+      "Agile-coach",
+      "Consultant"
+    ],
+    "faq": [
+      {
+        "id": 1,
+        "question": "Which certifications does this course prepare for?",
+        "answer": "It prepares for CSM (Certified ScrumMaster) and PSM (Professional Scrum Master)."
+      },
+      {
+        "id": 2,
+        "question": "Do I need prior Agile knowledge?",
+        "answer": "No, this course starts with Agile fundamentals and then deep dives into Scrum."
+      },
+      {
+        "id": 3,
+        "question": "What Scrum roles are covered?",
+        "answer": "Scrum Master, Product Owner, and Development Team roles are explained in detail."
+      },
+      {
+        "id": 4,
+        "question": "Is this course suitable for project managers?",
+        "answer": "Yes, it is ideal for project managers, developers, and QA professionals."
+      },
+      {
+        "id": 5,
+        "question": "Will I learn practical Scrum practices?",
+        "answer": "Yes, you will learn sprint planning, daily scrums, sprint reviews, and retrospectives."
+      }
+    ]
+  },
+  {
+    "id": 10,
+    "slug": "c-cpp",
+    "courseName": "C,C++",
+    "image": "c2.png",
+    "video": "Cplus-bg.webm",
+    "courseCategory": "Programming",
+    "courseTitle": "C/C++",
+    "courseDescription": [
+      "Strong foundation in structured programming",
+      "Memory management and pointers",
+      "Intro to object-oriented concepts in C++"
+    ],
+    "courseDuration": "2.5 Months",
+    "courseStudents": 1800,
+    "overview": "C and C++ are the backbone of system programming, game development, and performance-critical applications. This course starts with structured programming in C, covering variables, loops, pointers, and memory management. You’ll then progress into C++ concepts such as classes, inheritance, polymorphism, and the Standard Template Library (STL). Through coding challenges and projects, you’ll develop problem-solving skills and understand how low-level programming powers modern software. This course prepares you for roles in embedded systems, high-performance computing, and application development.",
+    "whoShouldEnroll": [
+      "Beginners wanting a solid foundation in programming",
+      "Students preparing for software development roles",
+      "Developers aiming to learn systems programming"
+    ],
+    "courseHighlights": [
+      "C fundamentals",
+      "OOP in C++"
+    ],
+    "syllabus": {
+      "sections": 8,
+      "lessons": 24,
+      "sectionsList": [
+        {
+          "id": 1,
+          "title": "C Programming Basics",
+          "lessons": [
+            "Introduction to C",
+            "Data Types, Variables, Operators",
+            "Control Statements and Loops"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Functions and Modular Programming",
+          "lessons": [
+            "Defining and Calling Functions",
+            "Function Arguments and Return Values",
+            "Recursion and Scope"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Pointers and Memory Management",
+          "lessons": [
+            "Introduction to Pointers",
+            "Pointer Arithmetic",
+            "Dynamic Memory Allocation"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Structures, Unions and File Handling",
+          "lessons": [
+            "Structures and Unions",
+            "Typedef and Bit Fields",
+            "File I/O Operations"
+          ]
+        },
+        {
+          "id": 5,
+          "title": "C++ Basics and OOP",
+          "lessons": [
+            "Classes and Objects",
+            "Constructors and Destructors",
+            "Inheritance, Polymorphism, Encapsulation"
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Standard Template Library (STL)",
+          "lessons": [
+            "Introduction to STL",
+            "Vectors, Lists, Sets, Maps",
+            "Iterators and Algorithms"
+          ]
+        },
+        {
+          "id": 7,
+          "title": "Advanced Topics",
+          "lessons": [
+            "Exception Handling",
+            "Namespaces and Multi-file Projects",
+            "Debugging and Optimization"
+          ]
+        },
+        {
+          "id": 8,
+          "title": "Real-Time Projects",
+          "lessons": [
+            "Student Management System",
+            "Banking Application with File I/O",
+            "Inventory Management System"
+          ]
+        }
+      ]
+    },
+    "toolsCovered": [
+      "C / C++",
+      "GCC / Code::Blocks / Dev C++",
+      "Standard Template Library (STL)",
+      "Pointers and Memory Management",
+      "File I/O",
+      "Git and GitHub"
+    ],
+    "careerScope": [
+      "C-developer",
+      "C++ developer",
+      "Software-developer",
+      "Backend-developer",
+      "Embedded-systems-developer",
+      "System-programmer"
+    ],
+    "faq": [
+      {
+        "id": 1,
+        "question": "Is this course suitable for beginners?",
+        "answer": "Yes, it starts from C basics, then moves into advanced C++ topics like OOP and STL."
+      },
+      {
+        "id": 2,
+        "question": "Which key topics are covered?",
+        "answer": "Pointers, memory management, OOP, data structures, file handling, and STL."
+      },
+      {
+        "id": 3,
+        "question": "Will I practice coding problems?",
+        "answer": "Yes, coding exercises and competitive programming examples are included."
+      },
+      {
+        "id": 4,
+        "question": "Does the course cover real-world projects?",
+        "answer": "Yes, you will implement mini-projects like student management systems and calculators."
+      },
+      {
+        "id": 5,
+        "question": "Will I be prepared for interviews?",
+        "answer": "Yes, the course includes problem-solving sessions and interview-level C/C++ questions."
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "slug": "it-project-coordination",
+    "courseName": "IT Project Coordination",
+    "image": "it-project2.png",
+    "video": "It-Project-Bg.webm",
+    "courseCategory": "Management",
+    "courseTitle": "IT Project Coordination",
+    "courseDescription": [
+      "Manage and coordinate IT teams",
+      "Track deliverables and timelines",
+      "Work with developers and clients"
+    ],
+    "courseDuration": "1.5 Months",
+    "courseStudents": 500,
+    "overview": "The IT Project Coordination course equips learners with the skills required to support project managers and teams in the successful delivery of IT projects. It focuses on coordination, documentation, communication, scheduling, resource management, and reporting. This course bridges the gap between technical teams and business stakeholders, ensuring smooth project execution, compliance with project plans, and timely delivery. It also covers popular project management tools, reporting methods, and collaboration practices widely used in IT industries.",
+    "whoShouldEnroll": [
+      "Aspiring IT Project Coordinators or Assistants",
+      "Team Leads and Junior Project Managers",
+      "IT professionals seeking project management exposure",
+      "Anyone aiming to support and manage IT projects efficiently"
+    ],
+    "courseHighlights": [
+      "Hands-on task tracking",
+      "Use tools like JIRA and Trello"
+    ],
+    "syllabus": {
+      "sections": 6,
+      "lessons": 30,
+      "sectionsList": [
+        {
+          "id": 1,
+          "title": "Introduction to IT Project Coordination",
+          "lessons": [
+            "Role of a Project Coordinator",
+            "Difference Between Project Manager and Project Coordinator",
+            "Understanding IT Projects and Lifecycles"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Project Planning and Scheduling",
+          "lessons": [
+            "Work Breakdown Structure (WBS)",
+            "Creating and Managing Project Schedules",
+            "Task Dependencies and Milestones",
+            "Resource Allocation Basics"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Communication and Collaboration",
+          "lessons": [
+            "Effective Stakeholder Communication",
+            "Meeting Coordination and Documentation",
+            "Team Collaboration Techniques",
+            "Conflict Resolution in Projects"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Monitoring and Reporting",
+          "lessons": [
+            "Tracking Project Progress",
+            "Status Reports and Dashboards",
+            "Risk and Issue Logs",
+            "Change Request Management"
+          ]
+        },
+        {
+          "id": 5,
+          "title": "Tools and Techniques",
+          "lessons": [
+            "Project Management Software (MS Project, Jira, Trello)",
+            "Collaboration Tools (Slack, MS Teams, Confluence)",
+            "Documentation and File Sharing",
+            "Agile and Waterfall Methodologies Overview"
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Practical Application and Case Studies",
+          "lessons": [
+            "Real-Time IT Project Coordination Scenarios",
+            "Case Study: IT Infrastructure Rollout",
+            "Case Study: Software Development Project",
+            "Mock Project Coordination Exercises"
+          ]
+        }
+      ]
+    },
+    "toolsCovered": [
+      "MS Project",
+      "Jira",
+      "Trello",
+      "Asana",
+      "Confluence",
+      "Slack",
+      "Microsoft Teams",
+      "Google Workspace",
+      "Documentation Tools"
+    ],
+    "careerScope": [
+      "IT-project-coordinator",
+      "Project-support-specialist",
+      "Project-analyst",
+      "Junior-project-manager",
+      "Pmo-coordinator",
+      "Business-support-analyst",
+      "Operations-coordinator"
+    ],
+    "faq": [
+      {
+        "id": 1,
+        "question": "What skills are taught in this course?",
+        "answer": "Requirements gathering, project tracking, stakeholder communication, and reporting."
+      },
+      {
+        "id": 2,
+        "question": "Is this course technical?",
+        "answer": "No, it focuses more on coordination, documentation, and tools like JIRA/MS Project."
+      },
+      {
+        "id": 3,
+        "question": "Will I learn Agile methodologies?",
+        "answer": "Yes, Agile and Scrum basics are part of the training."
+      },
+      {
+        "id": 4,
+        "question": "Who should enroll?",
+        "answer": "Anyone aspiring to become a project coordinator or project support officer."
+      },
+      {
+        "id": 5,
+        "question": "Are practical case studies included?",
+        "answer": "Yes, real-world IT project scenarios are discussed."
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "slug": "rest-api-development",
+    "courseName": "Rest API Development",
+    "image": "api2.png",
+    "video": "api-bg.webm",
+    "courseCategory": "Backend Development",
+    "courseTitle": "REST API Development",
+    "courseDescription": [
+      "Build RESTful APIs from scratch",
+      "Learn best practices for endpoints",
+      "Use tools like Postman, Swagger"
+    ],
+    "courseDuration": "1.5 Months",
+    "courseStudents": 1300,
+    "overview": "The REST API Development course focuses on designing, building, and consuming RESTful APIs using modern frameworks and tools. Learners gain hands-on experience in backend development, request/response handling, authentication, error handling, testing, and deployment. The course ensures participants understand API design best practices, scalability, and security, while also integrating APIs with frontend frameworks and databases.",
+    "whoShouldEnroll": [
+      "Backend Developers and Full Stack Developers",
+      "Software engineers looking to build APIs for web/mobile applications",
+      "IT professionals seeking expertise in web services and cloud integration",
+      "Anyone aspiring to build secure and scalable RESTful APIs"
+    ],
+    "courseHighlights": [
+      "Secure and scalable API design",
+      "Practical testing and deployment"
+    ],
+    "syllabus": {
+      "sections": 6,
+      "lessons": 28,
+      "sectionDetails": [
+        {
+          "id": 1,
+          "title": "Introduction to REST APIs",
+          "lessons": [
+            "What is an API?",
+            "REST vs SOAP",
+            "HTTP Methods (GET, POST, PUT, DELETE, PATCH)",
+            "REST Principles and Best Practices"
+          ]
+        },
+        {
+          "id": 2,
+          "title": "Environment Setup and Tools",
+          "lessons": [
+            "Setting up Backend Environment",
+            "Postman for API Testing",
+            "Using Git and GitHub for Version Control",
+            "Intro to API Documentation (Swagger/OpenAPI)"
+          ]
+        },
+        {
+          "id": 3,
+          "title": "Building REST APIs",
+          "lessons": [
+            "Creating REST Endpoints",
+            "Handling Requests and Responses",
+            "Working with JSON and XML",
+            "CRUD Operations with Database"
+          ]
+        },
+        {
+          "id": 4,
+          "title": "Database Integration",
+          "lessons": [
+            "MySQL and PostgreSQL Integration",
+            "MongoDB with REST APIs",
+            "Using ORM (Hibernate/JPA/Entity Framework)",
+            "Database Transactions and Error Handling"
+          ]
+        },
+        {
+          "id": 5,
+          "title": "API Security and Advanced Features",
+          "lessons": [
+            "Authentication: Basic Auth, JWT, OAuth2",
+            "Authorization and Role-Based Access",
+            "CORS and Rate Limiting",
+            "Error Handling and Logging"
+          ]
+        },
+        {
+          "id": 6,
+          "title": "Testing and Deployment",
+          "lessons": [
+            "Unit Testing APIs (JUnit, Mocha/Chai, PyTest)",
+            "API Documentation with Swagger",
+            "CI/CD Integration (Jenkins, GitHub Actions)",
+            "Deploying APIs on AWS / Heroku"
+          ]
+        }
+      ]
+    },
+    "toolsCovered": [
+      "Spring Boot",
+      "Node.js / Express.js",
+      "Python Flask / Django REST",
+      "MySQL",
+      "PostgreSQL",
+      "MongoDB",
+      "Postman",
+      "Swagger (OpenAPI)",
+      "Git and GitHub",
+      "Jenkins",
+      "AWS / Heroku"
+    ],
+    "careerScope": [
+      "Rest-api-developer",
+      "Backend-developer",
+      "Fullstack-developer",
+      "Software-engineer",
+      "Integration-developer",
+      "Cloud-api-engineer",
+      "Devops-engineer"
+    ],
+    "faq": [
+      {
+        "id": 1,
+        "question": "Which technologies are used?",
+        "answer": "Spring Boot, Node.js, and Postman are covered for building and testing APIs."
+      },
+      {
+        "id": 2,
+        "question": "Will I learn authentication and security?",
+        "answer": "Yes, JWT, OAuth2, and API security best practices are included."
+      },
+      {
+        "id": 3,
+        "question": "Are real-world projects included?",
+        "answer": "Yes, you will build and document APIs using Swagger and integrate with databases."
+      },
+      {
+        "id": 4,
+        "question": "Does the course cover REST vs GraphQL?",
+        "answer": "Yes, REST fundamentals are the focus, but GraphQL basics are also explained."
+      },
+      {
+        "id": 5,
+        "question": "Will I practice API testing?",
+        "answer": "Yes, Postman and automated test scripts are part of the course."
+      }
+    ]
+  }
+]

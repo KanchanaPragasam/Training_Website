@@ -85,7 +85,7 @@ export class FormComponent implements OnInit, OnDestroy {
   ngOnInit(): void {
      this.seo.updateMetaData({
     title: 'Enroll for IT Courses & Internships | Software Training Service',
-    description: 'Apply now for Java, Python, Angular, and Web Development courses or internships at Software Training Service, Ambattur. Get certified and boost your IT career.',
+    description: 'Apply now for Java, Python, Angular, and Web Development courses or internships at Your Academy, Ambattur. Get certified and boost your IT career.',
     image: 'https://wp4.inspirationcs.ca/assets/images/logo-croped.webp',
     url: 'https://wp4.inspirationcs.ca/enrollment',
     robots: 'index, follow',
@@ -220,6 +220,7 @@ export class FormComponent implements OnInit, OnDestroy {
   /**
    *  Switch Validation Rules Based on "course" or "internship"
    */
+  
   private setupCourseTypeListener(): void {
     this.courseForm.get('type')?.valueChanges
       .pipe(takeUntil(this.destroy$))

@@ -5,7 +5,7 @@
       <img
         class="animated slideInLeft"
         src="../../../../../assets/images/hero-page-image.png"
-        alt="Trainer Girl"
+        alt="Trainer teaching coding"
         loading="eager"
       />
     </div>
@@ -222,14 +222,14 @@
           <img
             class="base-img"
             [src]="item.image"
-            alt="Main image"
+            alt="{{ item.title }} main image"
             loading="eager"
           />
           <img
             class="overlay-img"
             appAnimateOnScroll
             [src]="item.overlayImage"
-            alt="Overlay image"
+             alt="{{ item.title }} overlay image"
             loading="eager"
           />
         </div>

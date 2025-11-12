@@ -1,10 +1,17 @@
 <!--  Floating Bot Button -->
 <section class="enquiry-bot-section">
   <div class="container">
-     <button class="scroll-top-button" title="Go to Top" (click)="scrollToTop()">
+    <button class="scroll-top-button" title="Go to Top" (click)="scrollToTop()">
       <i class="fa-solid fa-arrow-up"></i>
     </button>
-    <div class="chatbot-button fw-bold" title="Enquiry Form" (click)="togglePopup()">
+    <div
+      class="chatbot-button fw-bold"
+      title="Enquiry Form"
+      role="button"
+      aria-haspopup="dialog"
+
+      (click)="togglePopup()"
+    >
       Enquiry Now
     </div>
 
@@ -13,14 +20,13 @@
       class="chatbot-popup animated"
       [class.slideInRight]="!isClosing"
       [class.slideOutRight]="isClosing"
-     
       *ngIf="isPopupVisible"
     >
-      
-
-      <div class="chatbot-header d-flex justify-content-between align-items-center">
+      <div
+        class="chatbot-header d-flex justify-content-between align-items-center"
+      >
         <h5 class="primary-color">Quick Enquiry</h5>
-        <button class="close-button" (click)="togglePopup()">
+        <button class="close-button" (click)="togglePopup()" aria-label="Close Enquiry Form">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
@@ -28,24 +34,48 @@
       <form [formGroup]="enquiryForm" (ngSubmit)="sendEnquiry()">
         <div class="row">
           <div class="col-md-12 mb-3">
-            <label class="required-label">Name</label>
-            <input type="text" formControlName="name" class="form-control" />
+            <label for="name" class="required-label">Name</label>
+            <input
+              id="name"
+              type="text"
+              formControlName="name"
+              class="form-control"
+              aria-required="true"
+            />
           </div>
 
           <div class="col-md-12 mb-3">
-            <label class="required-label">Mobile Number</label>
-            <input type="tel" formControlName="mobile" class="form-control" />
+            <label for="mobile" class="required-label">Mobile Number</label>
+            <input
+              id="mobile"
+              type="tel"
+              formControlName="mobile"
+              class="form-control"
+              aria-required="true"
+            />
           </div>
 
           <div class="col-md-12 mb-3">
-            <label class="required-label">Email</label>
-            <input type="email" formControlName="email" class="form-control" />
+            <label for="email" class="required-label">Email</label>
+            <input
+              id="email"
+              type="email"
+              formControlName="email"
+              class="form-control"
+              aria-required="true"
+            />
           </div>
 
           <!-- Dropdown -->
           <div class="col-md-12 mb-3">
-            <label class="required-label">Enquire Regarding</label>
-            <select formControlName="enquiryType" class="form-select">
+            <label for="enquiry-regard" class="required-label"
+              >Enquire Regarding</label
+            >
+            <select
+              id="enquiry-regard"
+              formControlName="enquiryType"
+              class="form-select"
+            >
               <option value="">Select an option</option>
               <option value="Course">Course</option>
               <option value="Internship">Internship</option>
@@ -53,7 +83,7 @@
           </div>
 
           <div class="col-md-12 mb-3" *ngIf="isBrowser">
-            <label class="required-label">Message</label>
+            <label for="enquiry-message" class="required-label">Message</label>
             <div class="quill-wrapper resizable">
               <quill-editor
                 [(ngModel)]="message"

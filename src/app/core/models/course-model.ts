@@ -15,7 +15,7 @@ export interface Course {
   courseHighlights?: string[];
   careerScope?: string[];
   syllabus?: Syllabus;
-  canEnroll?:string[];
+   whoShouldEnroll?: string[];  // <-- renamed
   toolsCovered?:string[];
   faq?: faq[];
 

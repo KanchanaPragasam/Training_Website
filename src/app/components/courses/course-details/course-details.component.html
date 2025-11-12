@@ -4,8 +4,10 @@
     <img
       *ngIf="!videoLoaded && course?.video"
       class="banner-video"
-      src="../../../../assets/images/fall-back-image.webp"
-      alt="Fallback Banner"
+      src="../../../../assets/images/course-banner.webp"
+      [alt]="
+        'Fallback banner image for ' + course?.courseTitle + ' online training'
+      "
     />
 
     <video
@@ -21,14 +23,14 @@
       width="100%"
       (loadeddata)="onVideoLoaded()"
     >
-      Your browser does not support the video tag.
+      {{ course?.courseTitle }} course video
     </video>
 
     <ng-container *ngIf="!course?.video">
       <img
         class="banner-video"
-        src="../../../../assets/images/fall-back-image.webp"
-        alt="Fallback Banner"
+        src="../../../../assets/images/course-banner.webp"
+        alt="Fallback banner image for ' + course?.courseTitle + ' coding training"
       />
     </ng-container>
 
@@ -97,7 +99,10 @@
         <div class="col-md-6">
           <h5 class="fw-bold">Who can enroll</h5>
           <div class="enroll-container">
-            <div *ngFor="let enroll of course?.canEnroll" class="enroll-chip">
+            <div
+              *ngFor="let enroll of course?.whoShouldEnroll"
+              class="enroll-chip"
+            >
               <i class="bi bi-check-circle me-1"></i>
               <p class="enroll-text">{{ enroll }}</p>
             </div>
@@ -146,7 +151,7 @@
         <div class="certificate flex-shrink-0">
           <img
             src="../../../../assets/images/certificate.webp"
-            alt="Certificate"
+            alt="Course Completion Certificate for {{ course?.courseTitle }}"
             class="img-fluid certificate-img"
           />
           <span></span>

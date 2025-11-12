@@ -1,7 +1,11 @@
 <div class="card" (click)="goToCourseDetails(course)">
   <!-- Image -->
   <div class="card-image">
-    <img [src]="'assets/images/' + course.image" [alt]="course.courseTitle" loading="eager" />
+    <img
+      [src]="'assets/images/' + course.image"
+      [alt]="'Course: ' + course.courseTitle + ' in ' + course.courseCategory"
+      loading="eager"
+    />
   </div>
 
   <!-- Content -->
@@ -14,7 +18,10 @@
       <div class="duration">
         <i class="bi bi-clock me-1"></i> {{ course.courseDuration }}
       </div>
-      <button class="primary-button" (click)="goToCourseDetails(course); $event.stopPropagation()">
+      <button
+        (click)="goToCourseDetails(course); $event.stopPropagation()"
+        [attr.aria-label]="'Learn more about ' + course.courseTitle + ' course'"
+      >
         Learn More...
       </button>
     </div>

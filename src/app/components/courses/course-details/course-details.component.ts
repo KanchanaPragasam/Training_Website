@@ -9,6 +9,7 @@ import { faq } from '../../../core/models/faq-model';
 import { XmlReaderService } from '../../../core/services/xml-reader.service';
 import { isPlatformBrowser } from '@angular/common';
 import { SeoService } from '../../../core/services/seo.service';
+import { log } from 'console';
 
 @Component({
   selector: 'app-course-details',
@@ -140,9 +141,9 @@ export class CourseDetailsComponent implements OnInit {
 
   enrollNow() {
     if (this.course) {
-
-      console.log('form page routed', this.course.courseName);
-      this.router.navigate(['/enrollment'], { state: { selectedCourse: this.course?.courseName || '' } });
+      console.log(this.course)
+      console.log('form page routed', this.course.courseTitle);
+      this.router.navigate(['/enrollment'], { state: { selectedCourse: this.course?.courseTitle || '' } });
     } else {
       console.error('No course selected to enroll!');
     }

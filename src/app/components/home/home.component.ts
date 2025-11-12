@@ -15,6 +15,7 @@ import { Course } from '../../core/models/course-model';
 import { faq } from '../../core/models/faq-model';
 import { isPlatformBrowser } from '@angular/common';
 import { SeoService } from '../../core/services/seo.service';
+import { HttpClient } from '@angular/common/http';
 
 @Component({
   selector: 'app-home',
@@ -38,7 +39,8 @@ export class HomeComponent implements OnInit, OnDestroy {
     private xmlReader: XmlReaderService,
     private coursesService: CourseService,
     private cdr: ChangeDetectorRef, @Inject(PLATFORM_ID) private platformId: Object,
-    private seo: SeoService
+    private seo: SeoService,
+    private http:HttpClient
   ) { }
 
   ngOnInit(): void {
@@ -72,17 +74,15 @@ export class HomeComponent implements OnInit, OnDestroy {
       }
     });
 
-
-    this.xmlReader.readXml('../../../../assets/data/homefaq.xml').subscribe((xml) => {
-      const faqNodes = Array.from(xml?.getElementsByTagName('faq') || []);
-      this.faqList = faqNodes.map((faq) => ({
-        question: faq.getElementsByTagName('question')[0]?.textContent?.trim() || '',
-        answer: faq.getElementsByTagName('answer')[0]?.textContent?.trim() || '',
-        isOpen: false,
-      }));
+    this.loadFaqs();
+  
+  }
+   loadFaqs(): void {
+    this.http.get<faq[]>('assets/data/homefaq.json').subscribe((faqs) => {
+      // Assign FAQ list and initialize isOpen
+      this.faqList = faqs.map(faq => ({ ...faq, isOpen: false }));
     });
   }
-
   @HostListener('window:resize')
   onResize() {
     // We update the grouping immediately on resize

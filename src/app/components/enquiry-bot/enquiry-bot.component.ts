@@ -67,11 +67,15 @@ export class EnquiryBotComponent implements OnInit, OnDestroy {
 
   /** ------------------- Scroll ------------------- */
   private scrollHandler = () => {
+     if (isPlatformBrowser(this.platformId)) {
     this.showScrollTop = window.scrollY > 300;
+     }
   };
 
   scrollToTop(): void {
+     if (isPlatformBrowser(this.platformId)) {
     window.scrollTo({ top: 0, behavior: 'smooth' });
+     }
   }
 
   /** ------------------- Form ------------------- */

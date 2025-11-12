@@ -3,6 +3,8 @@ import { XmlReaderService } from '../../core/services/xml-reader.service';
 import { faq } from '../../core/models/faq-model';
 import { HttpClient } from '@angular/common/http';
 import { SeoService } from '../../core/services/seo.service';
+import { Router } from '@angular/router';
+
 
 
 interface Internship {
@@ -47,7 +49,7 @@ export class InternshipComponent implements OnInit {
 
 
 
-  constructor(private http: HttpClient, private seo: SeoService) { }
+  constructor(private http: HttpClient, private seo: SeoService,private router: Router) { }
 
   ngOnInit() {
     const pageUrl = 'https://wp4.inspirationcs.ca/internship';
@@ -55,7 +57,7 @@ export class InternshipComponent implements OnInit {
     this.seo.updateMetaData({
       title: 'IT Internships in Ambattur | Software & Web Development Internships',
       description:
-        'Apply for top IT internships in Ambattur at Software Training Service. Gain hands-on experience in Java, Python, Web Development & UI/UX Design. Build your career with us.',
+        'Apply for top IT internships in Ambattur at Your Academy. Gain hands-on experience in Java, Python, Web Development & UI/UX Design. Build your career with us.',
       image: 'https://wp4.inspirationcs.ca/assets/images/course-bg.webp',
       url: pageUrl,
       canonical: pageUrl,
@@ -100,9 +102,16 @@ export class InternshipComponent implements OnInit {
 
 
   fetchInternships() {
-    this.http.get('assets/data/internships.xml', { responseType: 'text' })
-      .subscribe(data => this.parseXML(data));
-  }
+  this.http.get<Program[]>('assets/data/internships.json')
+    .subscribe(data => {
+      this.programs = data;
+      // Flatten internships for filtering and default display
+      this.internships = this.programs.flatMap(p => p.internships);
+      this.filteredInternships = this.internships;
+      this.categories = ['All', ...Array.from(new Set(this.internships.map(i => i.category)))];
+    });
+}
+
 
   parseXML(xmlString: string) {
     const parser = new DOMParser();
@@ -150,9 +159,8 @@ export class InternshipComponent implements OnInit {
       cat === 'All' ? this.internships : this.internships.filter(i => i.category.toLowerCase() === cat.toLowerCase());
   }
   enrollNow() {
+    this.router.navigate(['/enrollment']);
 
   }
-  // applyNow(item: Internship) {
-  //   alert(`Applying for "${item.title}" under ${item.category}`);
-  // }
+ 
 }
